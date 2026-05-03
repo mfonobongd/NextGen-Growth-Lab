@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from "r
 import React, { useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { HelmetProvider } from "react-helmet-async";
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -87,6 +88,7 @@ export default function App() {
           </main>
           <Footer />
         </div>
+        <Analytics />
       </Router>
     </HelmetProvider>
   );
