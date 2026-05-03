@@ -44,7 +44,7 @@ export default function HireTalent() {
               <Globe2 className="w-10 h-10 text-brand mb-6" />
               <h3 className="text-xl font-bold text-white mb-3">Pan-African & Global</h3>
               <p className="text-zinc-400 leading-relaxed text-sm">
-                Access diverse talent from Nigeria, Ghana, Kenya, South Africa, and beyond — remote-ready.
+                Access diverse talent from Nigeria, Ghana, Kenya, South Africa, and beyond - remote-ready.
               </p>
             </div>
 

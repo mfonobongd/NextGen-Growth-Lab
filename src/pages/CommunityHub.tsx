@@ -83,7 +83,7 @@ export default function CommunityHub() {
       <Section className="bg-brand-surface border-y border-brand-border py-16 md:py-24">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">What You'll Get as a Member</h2>
-          <p className="text-gray-400">Everything you need to build, grow, and monetize communities — all in one place.</p>
+          <p className="text-gray-400">Everything you need to build, grow, and monetize communities - all in one place.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -171,12 +171,12 @@ export default function CommunityHub() {
                 </li>
               ))}
             </ul>
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full relative z-10">
+              <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full relative z-10">
                 <a 
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform?usp=dialog"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-4 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-800 transition-colors font-semibold text-white flex justify-center items-center"
+                  className="w-full py-4 rounded-xl border border-brand-border bg-[#1a1a1a] hover:bg-[#2a2a2a] hover:border-brand/50 transition-all duration-300 font-bold text-white flex justify-center items-center shadow-lg"
                 >
                   Join Free
                 </a>
@@ -248,7 +248,7 @@ export default function CommunityHub() {
           </p>
           <div className="space-y-4">
             {[
-              "Be respectful — no hate speech, discrimination, or harassment of any kind.",
+              "Be respectful - no hate speech, discrimination, or harassment of any kind.",
               "No spam or unsolicited self-promotion. Share value, not pitches.",
               "Keep discussions constructive. Disagreement is welcome; toxicity is not.",
               "Protect member privacy. What's shared in the community stays in the community.",

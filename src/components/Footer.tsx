@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-brand-bg border-t border-brand-border pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-6">
               <div className="w-8 h-8 rounded-lg bg-gradient-accent flex items-center justify-center">
@@ -40,7 +40,6 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-gray-400">
               <li><Link to="/community/hub" className="hover:text-white transition-colors">Community</Link></li>
               <li><Link to="/events/workshops" className="hover:text-white transition-colors">Events & Workshops</Link></li>
-              <li><Link to="/business/hire" className="hover:text-white transition-colors">Hire Talent</Link></li>
               <li><Link to="/community/hub" className="hover:text-white transition-colors">Pro Membership</Link></li>
             </ul>
           </div>
@@ -49,10 +48,18 @@ export default function Footer() {
             <h4 className="font-semibold mb-6">Company</h4>
             <ul className="space-y-4 text-sm text-gray-400">
               <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
-              <li><Link to="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
-              <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+              <li><Link to="/business/hire" className="hover:text-white transition-colors">Hire Talent</Link></li>
               <li><Link to="/business/partner" className="hover:text-white transition-colors">Partner with us</Link></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-6">Resources</h4>
+            <ul className="space-y-4 text-sm text-gray-400">
+              <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+              <li><Link to="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
+              <li><Link to="/challenges" className="hover:text-white transition-colors">Challenges</Link></li>
             </ul>
           </div>
 

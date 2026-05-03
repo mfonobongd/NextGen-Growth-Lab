@@ -143,9 +143,14 @@ export default function Challenges() {
                     <div className="text-xs text-zinc-500 font-medium uppercase tracking-wider">Participants</div>
                   </div>
                 </div>
-                <button className="px-8 py-4 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 group/btn shadow-[0_0_20px_rgba(187,225,46,0.2)] hover:shadow-[0_0_30px_rgba(187,225,46,0.4)]">
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 group/btn shadow-[0_0_20px_rgba(187,225,46,0.2)] hover:shadow-[0_0_30px_rgba(187,225,46,0.4)]"
+                >
                   Join Challenge Now <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
-                </button>
+                </a>
               </div>
             </div>
 
@@ -181,9 +186,14 @@ export default function Challenges() {
                       <span className="text-sm text-zinc-300 group-hover/task:text-white transition-colors">{task}</span>
                     </motion.div>
                   ))}
-                  <button className="w-full py-4 text-sm font-semibold text-zinc-400 hover:text-brand transition-colors flex items-center justify-center gap-1 group/more">
+                  <a 
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-4 text-sm font-semibold text-zinc-400 hover:text-brand transition-colors flex items-center justify-center gap-1 group/more"
+                  >
                     View all 15 tasks <ChevronRight className="w-4 h-4 group-hover/more:translate-x-1 transition-transform" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

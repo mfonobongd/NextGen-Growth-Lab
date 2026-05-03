@@ -137,15 +137,13 @@ export default function Navbar() {
           >
             Contact
           </Link>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform?usp=dialog"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-black transition-all duration-200 bg-white rounded-full hover:bg-gray-200"
+          <Link
+            to="/community/hub"
+            className="group relative inline-flex items-center justify-center px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-black transition-all duration-300 bg-gradient-accent rounded-full hover:shadow-[0_0_20px_rgba(187,225,46,0.3)] hover:scale-105"
           >
             Join Community
             <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-0.5" />
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -177,6 +175,7 @@ export default function Navbar() {
                   ) : (
                     <Link
                       to={link.href}
+                      onClick={() => setMobileMenuOpen(false)}
                       className="text-lg font-medium text-gray-300 hover:text-white"
                     >
                       {link.name}
@@ -188,6 +187,7 @@ export default function Navbar() {
                          <Link
                           key={sub.name}
                           to={sub.href}
+                          onClick={() => setMobileMenuOpen(false)}
                           className="text-sm font-medium text-gray-400 hover:text-white"
                          >
                            {sub.name}
@@ -200,24 +200,25 @@ export default function Navbar() {
               <div className="h-px bg-brand-border w-full" />
               <Link
                 to="/about"
+                onClick={() => setMobileMenuOpen(false)}
                 className="text-lg font-medium text-gray-300 hover:text-white"
               >
                 About Us
               </Link>
               <Link
                 to="/contact"
+                onClick={() => setMobileMenuOpen(false)}
                 className="text-lg font-medium text-gray-300 hover:text-white"
               >
                 Contact Us
               </Link>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform?usp=dialog"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/community/hub"
+                onClick={() => setMobileMenuOpen(false)}
                 className="inline-flex items-center justify-center w-full px-6 py-3 text-sm font-medium text-black bg-gradient-accent rounded-full"
               >
                 Join Community
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}

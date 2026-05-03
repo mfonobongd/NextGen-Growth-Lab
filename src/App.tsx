@@ -3,8 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from "react-router-dom";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { HelmetProvider } from "react-helmet-async";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -50,6 +51,7 @@ function MainRoutes() {
   const location = useLocation();
   return (
     <AnimatePresence mode="wait">
+      {/* @ts-expect-error key is a valid React prop but it's not defined in the interface here */}
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
         <Route path="/community" element={<Navigate to="/community/hub" replace />} />
@@ -75,15 +77,17 @@ function MainRoutes() {
 
 export default function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <div className="flex min-h-screen flex-col bg-brand-bg text-white">
-        <Navbar />
-        <main className="flex-1">
-          <MainRoutes />
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <ScrollToTop />
+        <div className="flex min-h-screen flex-col bg-brand-bg text-white">
+          <Navbar />
+          <main className="flex-1">
+            <MainRoutes />
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 }

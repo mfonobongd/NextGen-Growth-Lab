@@ -1,25 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "motion/react";
 import { Section } from "../components/Section";
 import { MessageSquare, Mail, MapPin, Calendar, Globe2 } from "lucide-react";
 import { FAQList } from "./FAQ";
 
 export default function Contact() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    type: "partnership",
-    message: ""
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Simulate successful submission for frontend demo
-    alert(`Thanks ${formState.name}! We've received your ${formState.type} inquiry.`);
-    setFormState({ name: "", email: "", subject: "", type: "partnership", message: "" });
-  };
-
   return (
     <div className="pt-24 md:pt-32 pb-16 md:pb-24">
       <Section className="pb-16 text-center mt-8 md:mt-12">
@@ -59,9 +44,9 @@ export default function Contact() {
               <p className="text-zinc-400 text-sm leading-relaxed mb-6 relative z-10">
                 Book a discovery call with our team to discuss your goals and how we can help you achieve them.
               </p>
-              <button className="px-6 py-3 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-opacity">
+              <a href="https://cal.com/nextgen-growth-lab-waokgk/discoverycall?overlayCalendar=true" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-brand text-black font-semibold text-center rounded-xl hover:opacity-90 transition-opacity">
                 Book a Discovery Call
-              </button>
+              </a>
             </div>
           </motion.div>
 
@@ -72,16 +57,21 @@ export default function Contact() {
             className="bg-brand-surface border border-brand-border rounded-3xl p-8 lg:p-12 relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-brand/5 blur-[100px] rounded-full pointer-events-none" />
-            <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
+            
+            <form 
+              action="https://docs.google.com/forms/d/e/1FAIpQLSdDeuYlmOTy0B0yCJ5smOelxx7XtGtMAlwKcX6aWfo7vUnyqw/formResponse" 
+              method="POST"
+              target="_blank"
+              className="space-y-6 relative z-10"
+            >
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-zinc-400">Name</label>
                   <input 
                     type="text" 
+                    name="entry.1698133626"
                     required
-                    value={formState.name}
-                    onChange={e => setFormState({...formState, name: e.target.value})}
-                    className="w-full bg-[#1a1a1a] border border-brand-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand text-white"
+                    className="w-full bg-[#1a1a1a] border border-brand-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand text-white placeholder-zinc-600"
                     placeholder="Mfonobong Umondia"
                   />
                 </div>
@@ -89,10 +79,9 @@ export default function Contact() {
                   <label className="text-sm font-bold text-zinc-400">Email</label>
                   <input 
                     type="email" 
+                    name="entry.886306333"
                     required
-                    value={formState.email}
-                    onChange={e => setFormState({...formState, email: e.target.value})}
-                    className="w-full bg-[#1a1a1a] border border-brand-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand text-white"
+                    className="w-full bg-[#1a1a1a] border border-brand-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand text-white placeholder-zinc-600"
                     placeholder="nextgengrowthlab@gmail.com"
                   />
                 </div>
@@ -102,10 +91,9 @@ export default function Contact() {
                 <label className="text-sm font-bold text-zinc-400">Subject</label>
                 <input 
                   type="text" 
+                  name="entry.537384066"
                   required
-                  value={formState.subject}
-                  onChange={e => setFormState({...formState, subject: e.target.value})}
-                  className="w-full bg-[#1a1a1a] border border-brand-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand text-white"
+                  className="w-full bg-[#1a1a1a] border border-brand-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand text-white placeholder-zinc-600"
                   placeholder="How can we help?"
                 />
               </div>
@@ -113,25 +101,24 @@ export default function Contact() {
               <div className="space-y-2">
                 <label className="text-sm font-bold text-zinc-400">Inquiry Type</label>
                 <select 
-                  value={formState.type}
-                  onChange={e => setFormState({...formState, type: e.target.value})}
+                  name="entry.2072604982"
+                  required
                   className="w-full bg-[#1a1a1a] border border-brand-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand text-white"
                 >
-                  <option value="partnership">Partnership & Sponsorship</option>
-                  <option value="hiring">Hire Talent/Consulting</option>
-                  <option value="community">Community Membership</option>
-                  <option value="other">Other</option>
+                  <option value="Partnership & Sponsorship">Partnership & Sponsorship</option>
+                  <option value="Hire Talent/Consulting">Hire Talent/Consulting</option>
+                  <option value="Community Membership">Community Membership</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
 
               <div className="space-y-2">
                 <label className="text-sm font-bold text-zinc-400">Message</label>
                 <textarea 
+                  name="entry.49124418"
                   required
                   rows={4}
-                  value={formState.message}
-                  onChange={e => setFormState({...formState, message: e.target.value})}
-                  className="w-full bg-[#1a1a1a] border border-brand-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand resize-none text-white"
+                  className="w-full bg-[#1a1a1a] border border-brand-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand resize-none text-white placeholder-zinc-600"
                   placeholder="Tell us more about your needs..."
                 />
               </div>

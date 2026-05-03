@@ -1,12 +1,43 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "motion/react";
+import { Helmet } from "react-helmet-async";
 import { Section } from "../components/Section";
-import { ArrowLeft, Calendar, User, Share2 } from "lucide-react";
+import { ArrowLeft, Calendar, User, Share2, Check } from "lucide-react";
 import { BLOG_POSTS } from "./Blog";
 
 export default function BlogPost() {
   const { slug } = useParams();
   const post = BLOG_POSTS.find(p => p.slug === slug);
+  const [isCopied, setIsCopied] = useState(false);
+
+  const handleShare = async () => {
+    if (!post) return;
+    try {
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: post.title,
+            text: post.excerpt,
+            url: window.location.href,
+          });
+          return;
+        } catch (error: any) {
+          if (error.name === 'AbortError') {
+            return; // User cancelled the share dialog
+          }
+          // If share fails for other reasons (e.g., iframe restrictions without allow="web-share"),
+          // fallback to clipboard.
+        }
+      } 
+      
+      await navigator.clipboard.writeText(window.location.href);
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2000);
+    } catch (error) {
+      console.error("Error sharing:", error);
+    }
+  };
 
   if (!post) {
     return (
@@ -19,6 +50,20 @@ export default function BlogPost() {
 
   return (
     <article className="pt-24 md:pt-32 pb-16 md:pb-24">
+      <Helmet>
+        <title>{post.title} - NextGen Growth Lab</title>
+        <meta name="description" content={post.excerpt} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:image" content={post.imageUrl} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={window.location.href} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.excerpt} />
+        <meta name="twitter:image" content={post.imageUrl} />
+      </Helmet>
+      
       <Section className="pb-16 mt-8 md:mt-12">
         <div className="max-w-3xl mx-auto">
           <Link to="/blog" className="inline-flex items-center gap-2 text-sm font-bold text-zinc-400 hover:text-white transition-colors mb-8">
@@ -42,7 +87,13 @@ export default function BlogPost() {
           >
             <span className="flex items-center gap-2"><Calendar className="w-4 h-4 text-zinc-500" /> {post.date}</span>
             <span className="flex items-center gap-2"><User className="w-4 h-4 text-zinc-500" /> {post.author}</span>
-            <button className="ml-auto flex items-center gap-2 hover:text-white transition-colors"><Share2 className="w-4 h-4" /> Share</button>
+            <button 
+              onClick={handleShare}
+              className="ml-auto flex items-center gap-2 hover:text-white transition-colors"
+            >
+              {isCopied ? <Check className="w-4 h-4 text-green-500" /> : <Share2 className="w-4 h-4" />} 
+              {isCopied ? "Copied!" : "Share"}
+            </button>
           </motion.div>
         </div>
       </Section>

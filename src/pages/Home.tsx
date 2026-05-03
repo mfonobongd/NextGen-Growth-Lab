@@ -66,21 +66,25 @@ export default function Home() {
             
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link
-                  to="/community/hub"
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-black bg-brand rounded-xl shadow-[0_0_20px_rgba(187,225,46,0.3)] hover:shadow-[0_0_30px_rgba(187,225,46,0.5)] transition-all duration-300"
                 >
-                  Explore Programs
-                </Link>
+                  Join Community
+                </a>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link
-                  to="/contact"
+                <a
+                  href="https://cal.com/nextgen-growth-lab-waokgk/discoverycall?overlayCalendar=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-zinc-300 bg-zinc-900 border border-zinc-800 rounded-xl hover:bg-zinc-800 transition-all duration-300 relative overflow-hidden group"
                 >
                   <span className="relative z-10 w-full text-center">Book a Discovery Call</span>
                   <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </Link>
+                </a>
               </motion.div>
             </motion.div>
           </motion.div>
@@ -116,7 +120,7 @@ export default function Home() {
                 NextGen Growth Lab was born from a simple belief: <strong className="text-white font-medium">community-led growth professionals everywhere deserve world-class resources, real mentorship, and a network that grows with them.</strong>
               </p>
               <p>
-                We built the home that didn't exist — a global space where practitioners across the world learn together, land dream roles, launch projects, and define the future of community-led growth worldwide.
+                We built the home that didn't exist - a global space where practitioners across the world learn together, land dream roles, launch projects, and define the future of community-led growth worldwide.
               </p>
             </div>
             <motion.div 
@@ -267,14 +271,16 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform?usp=dialog"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-4 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-800 transition-colors font-semibold text-white flex justify-center items-center"
-            >
-              Join Free
-            </a>
+            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full">
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-4 rounded-xl border border-brand-border bg-[#1a1a1a] hover:bg-[#2a2a2a] hover:border-brand/50 transition-all duration-300 font-bold text-white flex justify-center items-center shadow-lg"
+              >
+                Join Free
+              </a>
+            </motion.div>
           </motion.div>
 
           {/* Premium Tier */}
@@ -317,14 +323,16 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <a 
-              href="https://paystack.shop/pay/nglcmembership"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-4 rounded-xl bg-brand text-black font-semibold hover:opacity-90 transition-opacity flex justify-center items-center"
-            >
-              Get Premium
-            </a>
+            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full">
+              <a 
+                href="https://paystack.shop/pay/nglcmembership"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-4 rounded-xl bg-brand text-black font-bold shadow-[0_0_20px_rgba(187,225,46,0.2)] hover:shadow-[0_0_30px_rgba(187,225,46,0.4)] transition-all duration-300 flex justify-center items-center"
+              >
+                Get Premium
+              </a>
+            </motion.div>
           </motion.div>
         </div>
       </Section>
@@ -521,19 +529,21 @@ export default function Home() {
           </p>
           <div className="relative flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform?usp=dialog"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-opacity"
+              className="px-8 py-4 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-opacity flex justify-center items-center"
             >
-              Join the Community for Free
+              Join Community
             </a>
-            <Link
-              to="/contact"
+            <a
+              href="https://cal.com/nextgen-growth-lab-waokgk/discoverycall?overlayCalendar=true"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 bg-[#1a1a1a] border border-brand-border text-white font-semibold rounded-xl hover:border-brand/50 transition-colors"
             >
               Book a Discovery Call
-            </Link>
+            </a>
           </div>
         </motion.div>
       </Section>

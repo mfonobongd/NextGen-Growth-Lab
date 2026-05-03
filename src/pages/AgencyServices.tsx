@@ -18,9 +18,9 @@ export default function AgencyServices() {
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
             Let our experienced community-led growth professionals embed with your team to build, manage, and scale your community, so you don't have to figure it out alone.
           </p>
-          <button className="px-8 py-4 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-opacity inline-flex items-center gap-2">
+          <a href="https://cal.com/nextgen-growth-lab-waokgk/discoverycall?overlayCalendar=true" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-opacity inline-flex items-center gap-2">
             Book a Discovery Call <ArrowRight className="w-5 h-5" />
-          </button>
+          </a>
         </motion.div>
       </Section>
 
@@ -34,14 +34,14 @@ export default function AgencyServices() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">What We Do</h2>
-            <p className="text-zinc-400 max-w-2xl mx-auto">Full-service community-led growth — from strategy to execution.</p>
+            <p className="text-zinc-400 max-w-2xl mx-auto">Full-service community-led growth - from strategy to execution.</p>
           </motion.div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 title: "Community Strategy & Build",
-                desc: "We design, launch, and manage branded communities from the ground up — with engagement playbooks tailored to your audience.",
+                desc: "We design, launch, and manage branded communities from the ground up - with engagement playbooks tailored to your audience.",
                 icon: LayoutTemplate,
                 list: ["Community architecture", "Platform setup & migration", "Launch strategy", "Moderation playbook"]
               },
@@ -65,7 +65,7 @@ export default function AgencyServices() {
               },
               {
                 title: "Team Onboarding & Upskilling",
-                desc: "Get your newly hired community, marketing, or DevRel team up to speed fast — or level up your existing team's CLG capabilities.",
+                desc: "Get your newly hired community, marketing, or DevRel team up to speed fast - or level up your existing team's CLG capabilities.",
                 icon: Users,
                 list: ["Role-specific onboarding", "Skills gap assessment", "Advanced engagement frameworks", "Hands-on workshops"]
               },
@@ -137,7 +137,7 @@ export default function AgencyServices() {
                 "Trained 500+ community professionals across Africa and beyond",
                 "In-house team with hands-on experience scaling real communities",
                 "Data-driven approach with measurable KPIs and reporting",
-                "End-to-end execution — strategy through to day-to-day management"
+                "End-to-end execution - strategy through to day-to-day management"
               ].map((reason, idx) => (
                 <motion.div 
                   key={idx} 
@@ -205,9 +205,14 @@ export default function AgencyServices() {
       <Section className="py-16 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-display font-bold text-white mb-8">Ready to scale your community?</h2>
-          <button className="px-8 py-4 bg-white text-black font-semibold rounded-xl hover:bg-gray-100 transition-colors inline-flex items-center gap-2">
+          <a 
+            href="https://cal.com/nextgen-growth-lab-waokgk/discoverycall?overlayCalendar=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-white text-black font-semibold rounded-xl hover:bg-gray-100 transition-colors inline-flex items-center gap-2"
+          >
             Get Started <ArrowRight className="w-5 h-5" />
-          </button>
+          </a>
         </div>
       </Section>
 
