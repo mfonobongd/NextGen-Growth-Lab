@@ -528,14 +528,12 @@ export default function Home() {
             Join a global community of community-led growth professionals and practitioners shaping the future. Your next opportunity awaits.
           </p>
           <div className="relative flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/community/hub"
               className="px-8 py-4 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-opacity flex justify-center items-center"
             >
               Join Community
-            </a>
+            </Link>
             <a
               href="https://cal.com/nextgen-growth-lab-waokgk/discoverycall?overlayCalendar=true"
               target="_blank"
