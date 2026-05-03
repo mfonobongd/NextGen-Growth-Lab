@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from "r
 import React, { useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { HelmetProvider } from "react-helmet-async";
-import { Analytics } from '@vercel/analytics/react';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import Navbar from "./components/Navbar";
