@@ -44,7 +44,7 @@ export default function Contact() {
               <p className="text-zinc-400 text-sm leading-relaxed mb-6 relative z-10">
                 Book a discovery call with our team to discuss your goals and how we can help you achieve them.
               </p>
-              <a href="https://cal.com/nextgen-growth-lab-waokgk/discoverycall?overlayCalendar=true" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-brand text-black font-semibold text-center rounded-xl hover:opacity-90 transition-opacity">
+              <a href="https://cal.com/nextgen-growth-lab-waokgk/discoverycall?overlayCalendar=true" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2">
                 Book a Discovery Call
               </a>
             </div>
@@ -125,7 +125,7 @@ export default function Contact() {
 
               <button 
                 type="submit"
-                className="w-full py-4 rounded-xl bg-brand text-black font-bold transition-opacity hover:opacity-90"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2 w-full"
               >
                 Send Message
               </button>

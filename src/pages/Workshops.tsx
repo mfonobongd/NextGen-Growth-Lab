@@ -94,7 +94,7 @@ export default function Workshops() {
                     </div>
                   </div>
 
-                  <button className="w-full sm:w-auto px-8 py-4 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+                  <button className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2">
                     RSVP for Workshop <ArrowRight className="w-5 h-5" />
                   </button>
                 </div>

@@ -34,7 +34,7 @@ export default function CommunityHub() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform?usp=dialog"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-8 py-4 bg-brand text-black font-semibold rounded-xl shadow-[0_0_20px_rgba(187,225,46,0.3)] hover:shadow-[0_0_30px_rgba(187,225,46,0.5)] transition-all flex justify-center items-center"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2"
               >
                 Join for Free
               </a>
@@ -44,7 +44,7 @@ export default function CommunityHub() {
                 href="https://paystack.shop/pay/nglcmembership"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-8 py-4 bg-brand-surface border border-brand-border text-white font-semibold rounded-xl hover:bg-zinc-800 transition-colors flex justify-center items-center relative overflow-hidden group"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-transparent border border-brand-border rounded-full transition-all duration-300 hover:border-brand/50 hover:bg-brand/5 hover:scale-105 active:scale-95 gap-2"
               >
                 <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
                 <span className="relative z-10 w-full text-center">Explore Premium</span>
@@ -176,7 +176,7 @@ export default function CommunityHub() {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-4 rounded-xl border border-brand-border bg-[#1a1a1a] hover:bg-[#2a2a2a] hover:border-brand/50 transition-all duration-300 font-bold text-white flex justify-center items-center shadow-lg"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-transparent border border-brand-border rounded-full transition-all duration-300 hover:border-brand/50 hover:bg-brand/5 hover:scale-105 active:scale-95 gap-2 w-full"
                 >
                   Join Free
                 </a>
@@ -229,7 +229,7 @@ export default function CommunityHub() {
                 href="https://paystack.shop/pay/nglcmembership"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-4 rounded-xl bg-brand text-black font-semibold hover:bg-white transition-colors mb-4 flex justify-center items-center shadow-[0_0_20px_rgba(187,225,46,0.2)] hover:shadow-[0_0_30px_rgba(187,225,46,0.4)]"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2 w-full"
               >
                 Get Premium
               </a>
@@ -317,7 +317,7 @@ export default function CommunityHub() {
             href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform?usp=dialog"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative px-8 py-4 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-opacity inline-block"
+            className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2"
           >
             Join the Community for Free
           </a>

@@ -21,7 +21,7 @@ export default function BuildFest() {
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
             Designed for community managers, marketers, growth professionals, DevRel practitioners, and ecosystem builders. We are not just learning; we are actively building, experimenting, and shaping communities and growth systems across Africa.
           </p>
-          <button className="px-8 py-4 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-opacity inline-flex items-center gap-2">
+          <button className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2">
             Request an Invite <ArrowRight className="w-5 h-5" />
           </button>
         </motion.div>
@@ -190,7 +190,7 @@ export default function BuildFest() {
                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-black/50 group-hover:bg-black transition-colors"></div> DevRel ecosystem development</li>
                  <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-black/50 group-hover:bg-black transition-colors"></div> Content & personal branding</li>
                </ul>
-               <button className="w-full py-3 bg-black text-white font-semibold rounded-xl hover:bg-black/80 transition-colors flex items-center justify-center gap-2 mt-auto relative z-10 group/btn">
+               <button className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-transparent border border-brand-border rounded-full transition-all duration-300 hover:border-brand/50 hover:bg-brand/5 hover:scale-105 active:scale-95 gap-2 w-full">
                  Apply to Speak <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
                </button>
             </motion.div>
@@ -422,7 +422,7 @@ export default function BuildFest() {
             </div>
           </div>
 
-          <Link to="/contact" className="px-8 py-4 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-opacity inline-flex items-center gap-2">
+          <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2">
             Become a Sponsor <ArrowRight className="w-5 h-5" />
           </Link>
         </div>

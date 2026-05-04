@@ -44,11 +44,6 @@ export default function Home() {
             variants={staggerContainer}
             className="max-w-3xl mx-auto"
           >
-            <motion.div variants={fadeUp} className="mb-6 inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand/30 bg-brand/10 text-[10px] font-bold tracking-widest text-brand uppercase">
-              <span className="w-2 h-2 rounded-full bg-brand animate-pulse" />
-              NextGen BuildFest 2026 is LIVE
-            </motion.div>
-            
             <motion.h1 
               variants={fadeUp}
               className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tighter mb-6 leading-tight md:leading-[0.9] text-white"
@@ -66,21 +61,19 @@ export default function Home() {
             
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-black bg-brand rounded-xl shadow-[0_0_20px_rgba(187,225,46,0.3)] hover:shadow-[0_0_30px_rgba(187,225,46,0.5)] transition-all duration-300"
+                <Link
+                  to="/community/hub"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2 w-full sm:w-auto"
                 >
                   Join Community
-                </a>
+                </Link>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <a
                   href="https://cal.com/nextgen-growth-lab-waokgk/discoverycall?overlayCalendar=true"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-zinc-300 bg-zinc-900 border border-zinc-800 rounded-xl hover:bg-zinc-800 transition-all duration-300 relative overflow-hidden group"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-transparent border border-brand-border rounded-full transition-all duration-300 hover:border-brand/50 hover:bg-brand/5 hover:scale-105 active:scale-95 gap-2"
                 >
                   <span className="relative z-10 w-full text-center">Book a Discovery Call</span>
                   <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -248,7 +241,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="bg-brand-surface border border-brand-border rounded-3xl p-8 md:p-12 flex flex-col relative overflow-hidden group"
           >
-            <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             <div className="mb-8 border-b border-brand-border pb-8 relative z-10">
               <h3 className="text-2xl font-bold font-display mb-2 text-white">General</h3>
               <p className="text-zinc-400 text-sm mb-6">Get started with essential community-led growth access</p>
@@ -276,7 +269,7 @@ export default function Home() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-4 rounded-xl border border-brand-border bg-[#1a1a1a] hover:bg-[#2a2a2a] hover:border-brand/50 transition-all duration-300 font-bold text-white flex justify-center items-center shadow-lg"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-transparent border border-brand-border rounded-full transition-all duration-300 hover:border-brand/50 hover:bg-brand/5 hover:scale-105 active:scale-95 gap-2 w-full"
               >
                 Join Free
               </a>
@@ -328,7 +321,7 @@ export default function Home() {
                 href="https://paystack.shop/pay/nglcmembership"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-4 rounded-xl bg-brand text-black font-bold shadow-[0_0_20px_rgba(187,225,46,0.2)] hover:shadow-[0_0_30px_rgba(187,225,46,0.4)] transition-all duration-300 flex justify-center items-center"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2 w-full"
               >
                 Get Premium
               </a>
@@ -530,7 +523,7 @@ export default function Home() {
           <div className="relative flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               to="/community/hub"
-              className="px-8 py-4 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-opacity flex justify-center items-center"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2"
             >
               Join Community
             </Link>
@@ -538,7 +531,7 @@ export default function Home() {
               href="https://cal.com/nextgen-growth-lab-waokgk/discoverycall?overlayCalendar=true"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-[#1a1a1a] border border-brand-border text-white font-semibold rounded-xl hover:border-brand/50 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-transparent border border-brand-border rounded-full transition-all duration-300 hover:border-brand/50 hover:bg-brand/5 hover:scale-105 active:scale-95 gap-2"
             >
               Book a Discovery Call
             </a>

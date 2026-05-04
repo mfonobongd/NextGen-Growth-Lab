@@ -17,7 +17,7 @@ export default function HireTalent() {
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
             Access a curated pool of trained, mentored, and community-verified professionals ready to drive your community-led growth.
           </p>
-          <button className="px-8 py-4 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-opacity inline-flex items-center gap-2">
+          <button className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2">
             Get Started <ArrowRight className="w-5 h-5" />
           </button>
         </motion.div>
@@ -109,7 +109,7 @@ export default function HireTalent() {
           <p className="text-zinc-400 leading-relaxed mb-10">
             Tell us what you're looking for and we'll match you with the right professionals from our community.
           </p>
-          <button className="px-8 py-4 bg-white text-black font-semibold rounded-xl hover:bg-gray-100 transition-colors inline-flex items-center gap-2">
+          <button className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-white rounded-full transition-all duration-300 hover:bg-gray-100 hover:scale-105 active:scale-95 gap-2">
             Get Started <ArrowRight className="w-5 h-5" />
           </button>
         </div>

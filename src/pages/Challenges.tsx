@@ -147,7 +147,7 @@ export default function Challenges() {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-4 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 group/btn shadow-[0_0_20px_rgba(187,225,46,0.2)] hover:shadow-[0_0_30px_rgba(187,225,46,0.4)]"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2"
                 >
                   Join Challenge Now <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
                 </a>

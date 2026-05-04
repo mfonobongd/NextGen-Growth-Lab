@@ -139,7 +139,7 @@ export default function Navbar() {
           </Link>
           <Link
             to="/community/hub"
-            className="group relative inline-flex items-center justify-center px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-black transition-all duration-300 bg-gradient-accent rounded-full hover:shadow-[0_0_20px_rgba(187,225,46,0.3)] hover:scale-105"
+            className="group relative inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold tracking-wider text-black transition-all duration-300 bg-brand rounded-full hover:shadow-[0_0_20px_rgba(187,225,46,0.3)] hover:scale-105"
           >
             Join Community
             <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-0.5" />
@@ -215,7 +215,7 @@ export default function Navbar() {
               <Link
                 to="/community/hub"
                 onClick={() => setMobileMenuOpen(false)}
-                className="inline-flex items-center justify-center w-full px-6 py-3 text-sm font-medium text-black bg-gradient-accent rounded-full"
+                className="group relative inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold tracking-wider text-black transition-all duration-300 bg-brand rounded-full hover:shadow-[0_0_20px_rgba(187,225,46,0.3)] hover:scale-105 w-full"
               >
                 Join Community
               </Link>

@@ -72,7 +72,7 @@ export default function Footer() {
               href="https://nextgengrowthlab.substack.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 w-full justify-center px-4 py-3 bg-brand text-black font-semibold rounded-xl hover:opacity-90 transition-opacity"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2"
             >
               Subscribe on Substack <ArrowRight className="w-4 h-4" />
             </a>
