@@ -1,59 +1,20 @@
 import { motion } from "motion/react";
 import { Section } from "../components/Section";
-import { Search } from "lucide-react";
+import { Package } from "lucide-react";
 
-export const BLOG_POSTS = [
-  {
-    slug: "future-of-community-led-growth",
-    title: "The Future of Community-Led Growth in Africa",
-    excerpt: "How companies are leveraging communities to drive sustainable acquisition and retention across the continent.",
-    author: "Amfonobong",
-    date: "May 15, 2026",
-    category: "Insights",
-    imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
-  },
-  {
-    slug: "measuring-community-roi",
-    title: "Measuring Community ROI: Metrics that Matter",
-    excerpt: "Move beyond vanity metrics and learn how to track the true business impact of your community initiatives.",
-    author: "NextGen Team",
-    date: "April 22, 2026",
-    category: "Strategy",
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
-  },
-  {
-    slug: "building-devrel-programs",
-    title: "How to Build a Culturally Relevant DevRel Program",
-    excerpt: "Developer relations requires localized context. Here's how top companies are building DevRel in emerging markets.",
-    author: "Guest Contributor",
-    date: "March 10, 2026",
-    category: "DevRel",
-    imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80"
-  },
-  {
-    slug: "community-building-101",
-    title: "Community Building 101: Where to Start",
-    excerpt: "Everything you need to know to launch a successful community from scratch.",
-    author: "NextGen Team",
-    date: "February 28, 2026",
-    category: "Community Building",
-    imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80"
-  }
-];
-
-export default function Blog() {
+export default function Products() {
   return (
     <div className="pt-24 md:pt-32 pb-16 md:pb-24 flex items-center justify-center min-h-[70vh]">
       <Section className="pb-8 text-center mt-8 md:mt-12">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand/30 bg-brand/10 text-[10px] font-bold tracking-widest text-brand uppercase mb-6">
-            Insights & Updates
+            Our Products
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 tracking-tight text-white leading-tight">
-            The NextGen Blog
+            NextGen Products
           </h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
-            Thoughts, strategies, and resources on community building, growth marketing, and DevRel.
+            Tools and resources designed to help community builders, growth marketers, and DevRels scale their impact.
           </p>
 
           <div className="mt-16 sm:mt-20 inline-block">
@@ -62,7 +23,7 @@ export default function Blog() {
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand/5 blur-[100px] rounded-full pointer-events-none" />
               
               <div className="w-16 h-16 mx-auto bg-brand/10 border border-brand/20 rounded-2xl flex items-center justify-center mb-6 relative z-10">
-                <Search className="w-6 h-6 text-brand" />
+                <Package className="w-6 h-6 text-brand" />
               </div>
               
               <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-4 relative z-10">
@@ -70,7 +31,7 @@ export default function Blog() {
               </h2>
               
               <p className="text-zinc-400 text-lg max-w-lg mx-auto relative z-10">
-                We're brewing up some incredible insights and stories. Stay tuned for our first deep-dive article.
+                We're currently building something amazing. Join our newsletter to be the first to know when it launches.
               </p>
               
               <div className="mt-8 relative z-10">

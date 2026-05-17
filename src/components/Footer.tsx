@@ -57,7 +57,22 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-6">Resources</h4>
             <ul className="space-y-4 text-sm text-gray-400">
-              <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+              <li>
+                <Link to="/products" className="hover:text-white transition-colors flex items-center gap-2">
+                  Products
+                  <span className="text-[10px] font-bold px-2 py-0.5 bg-brand/10 text-brand rounded-full uppercase tracking-wider">
+                    Coming Soon
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="hover:text-white transition-colors flex items-center gap-2">
+                  Blog
+                  <span className="text-[10px] font-bold px-2 py-0.5 bg-brand/10 text-brand rounded-full uppercase tracking-wider">
+                    Coming Soon
+                  </span>
+                </Link>
+              </li>
               <li><Link to="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
               <li><Link to="/challenges" className="hover:text-white transition-colors">Challenges</Link></li>
             </ul>
@@ -72,7 +87,7 @@ export default function Footer() {
               href="https://nextgengrowthlab.substack.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2"
+              className="inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2 w-fit"
             >
               Subscribe on Substack <ArrowRight className="w-4 h-4" />
             </a>

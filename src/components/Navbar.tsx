@@ -36,7 +36,8 @@ const NAV_LINKS = [
     href: "/about",
     subLinks: [
       { name: "About Us", href: "/about" },
-      { name: "Blog", href: "/blog" },
+      { name: "Products", href: "/products", comingSoon: true },
+      { name: "Blog", href: "/blog", comingSoon: true },
       { name: "FAQ", href: "/faq" },
     ]
   }
@@ -112,9 +113,15 @@ export default function Navbar() {
                       <Link
                         key={sub.name}
                         to={sub.href}
-                        className="block px-4 py-2.5 text-sm text-gray-400 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
+                        className="flex items-center gap-2 px-4 py-2.5 text-sm text-gray-400 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
                       >
                         {sub.name}
+                        {/* @ts-ignore */}
+                        {sub.comingSoon && (
+                          <span className="text-[10px] font-bold px-2 py-0.5 bg-brand/10 text-brand rounded-full uppercase tracking-wider">
+                            Coming Soon
+                          </span>
+                        )}
                       </Link>
                     ))}
                   </div>
@@ -188,9 +195,15 @@ export default function Navbar() {
                           key={sub.name}
                           to={sub.href}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="text-sm font-medium text-gray-400 hover:text-white"
+                          className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-white"
                          >
                            {sub.name}
+                           {/* @ts-ignore */}
+                           {sub.comingSoon && (
+                             <span className="text-[10px] font-bold px-2 py-0.5 bg-brand/10 text-brand rounded-full uppercase tracking-wider">
+                               Coming Soon
+                             </span>
+                           )}
                          </Link>
                       ))}
                     </div>

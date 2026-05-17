@@ -52,32 +52,43 @@ export default function Home() {
               Generation of Leaders.
             </motion.h1>
             
-            <motion.p 
-              variants={fadeUp}
-              className="text-lg lg:text-xl text-zinc-400 mb-10 leading-relaxed max-w-2xl mx-auto"
-            >
-              A premium community-driven ecosystem for Marketers, DevRels, and Founders to learn, practice, and scale through elite programs.
-            </motion.p>
-            
-            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link
-                  to="/community/hub"
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2 w-full sm:w-auto"
+            <motion.div variants={fadeUp} className="relative mt-8">
+              <motion.div
+                animate={{ y: [-5, 5, -5] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+              >
+                <div className="absolute inset-0 bg-brand/5 blur-3xl rounded-full scale-150 pointer-events-none" />
+                <p 
+                  className="text-lg lg:text-xl text-zinc-300 mb-10 leading-relaxed max-w-2xl mx-auto relative z-10 font-medium"
                 >
-                  Join Community
-                </Link>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <a
-                  href="https://cal.com/nextgen-growth-lab-waokgk/discoverycall?overlayCalendar=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-transparent border border-brand-border rounded-full transition-all duration-300 hover:border-brand/50 hover:bg-brand/5 hover:scale-105 active:scale-95 gap-2"
-                >
-                  <span className="relative z-10 w-full text-center">Book a Discovery Call</span>
-                  <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </a>
+                  <motion.span
+                    animate={{ opacity: [0.8, 1, 0.8] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  >
+                    A premium ecosystem where top Marketers, DevRels, and Founders connect, learn, and scale world-class programs.
+                  </motion.span>
+                </p>
+                
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10 w-full sm:w-auto">
+                  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
+                    <Link
+                      to="/community/hub"
+                      className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(187,225,46,0.2)] hover:shadow-[0_0_40px_rgba(187,225,46,0.6)] gap-2 w-full sm:w-auto relative"
+                    >
+                      <span className="relative z-10 flex items-center justify-center gap-2">Join Community <ArrowRight className="w-5 h-5" /></span>
+                    </Link>
+                  </motion.div>
+                  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
+                    <a
+                      href="https://cal.com/nextgen-growth-lab-waokgk/discoverycall?overlayCalendar=true"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-transparent border border-brand-border rounded-full transition-all duration-300 hover:border-brand/80 hover:bg-brand/10 gap-2 w-full sm:w-auto relative group"
+                    >
+                      <span className="relative z-10 flex items-center justify-center gap-2">Book a Discovery Call <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></span>
+                    </a>
+                  </motion.div>
+                </div>
               </motion.div>
             </motion.div>
           </motion.div>
@@ -499,7 +510,15 @@ export default function Home() {
             <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-4 md:mb-6">FAQ</h2>
             <p className="text-xl text-zinc-400">Got questions?</p>
           </div>
-          <FAQList />
+          <FAQList limit={5} />
+          <div className="mt-8 text-center">
+            <Link 
+              to="/faq" 
+              className="inline-flex items-center text-brand font-medium hover:underline gap-2"
+            >
+              View more questions <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </Section>
 

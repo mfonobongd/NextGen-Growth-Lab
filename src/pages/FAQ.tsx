@@ -233,8 +233,9 @@ const FAQAccordion: React.FC<{ item: FAQItem; isOpen: boolean; onClick: () => vo
   );
 }
 
-export function FAQList() {
+export function FAQList({ limit }: { limit?: number }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const displayFaqs = limit ? faqs.slice(0, limit) : faqs;
 
   return (
     <motion.div 
@@ -243,7 +244,7 @@ export function FAQList() {
       viewport={{ once: true }}
       className="bg-brand-surface border border-brand-border rounded-3xl p-6 md:p-10 shadow-lg"
     >
-      {faqs.map((faq, index) => (
+      {displayFaqs.map((faq, index) => (
         <FAQAccordion
           key={index}
           item={faq}
