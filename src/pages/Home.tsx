@@ -124,7 +124,7 @@ export default function Home() {
                 NextGen Growth Lab was born from a simple belief: <strong className="text-white font-medium">community-led growth professionals everywhere deserve world-class resources, real mentorship, and a network that grows with them.</strong>
               </p>
               <p>
-                We built the home that didn't exist - a global space where practitioners across the world learn together, land dream roles, launch projects, and define the future of community-led growth worldwide.
+                We built the home that didn't exist - a global space where practitioners across the world learn together, land dream roles, launch projects, tools, and define the future of community-led growth worldwide.
               </p>
             </div>
             <motion.div 
@@ -352,16 +352,25 @@ export default function Home() {
             className="space-y-8"
           >
             <div className="inline-block px-3 py-1 rounded-full border border-brand/30 bg-brand/10 text-[10px] font-bold tracking-widest text-brand uppercase">
-              FLAGSHIP EVENT / 2026
+              FLAGSHIP EVENT
             </div>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
               NextGen BuildFest
             </h2>
-            <p className="text-zinc-400 text-base leading-relaxed">
-              Our premier in-person event focusing on deep learning, networking, and direct opportunities. Over 50+ growth leaders sharing playbooks, connecting with hiring companies, and building the future.
-            </p>
+            <div className="space-y-4 text-zinc-400 text-base leading-relaxed">
+              <p>
+                BuildFest is a curated, in-person experience designed for people building the future of community, growth, and ecosystems in Africa.
+              </p>
+              <p>
+                We bring together community managers, marketers, DevRel professionals, founders, and operators for something different from the usual conference - a space focused on real conversations, practical insights, and meaningful connections.
+              </p>
+              <p>
+                This is not about sitting through panels.<br/>
+                It’s about learning what actually works, sharing experiences, and leaving with ideas you can apply immediately.
+              </p>
+            </div>
             <ul className="space-y-4">
-              {['Exclusive keynotes from top founders', 'Direct hiring pathways', 'Hands-on strategy workshops'].map((item, i) => (
+              {['Exclusive keynotes from top founders', 'Community & growth showcases', 'Hands-on strategy workshops', 'Open conversations'].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-brand shrink-0" />
                   <span className="text-zinc-300 text-sm">{item}</span>
@@ -431,10 +440,10 @@ export default function Home() {
           
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Join", desc: "Enter the ecosystem and connect with vetted peers." },
-              { step: "02", title: "Learn", desc: "Master practical skills from leading operators." },
-              { step: "03", title: "Practice", desc: "Apply knowledge to real-world projects." },
-              { step: "04", title: "Grow", desc: "Access high-value jobs and consulting ops." }
+              { step: "01", title: "Join", desc: "Step into a curated ecosystem and connect with driven, like-minded peers." },
+              { step: "02", title: "Learn", desc: "Gain practical, real-world insights from experienced operators." },
+              { step: "03", title: "Practice", desc: "Apply what you learn through hands-on projects and real scenarios." },
+              { step: "04", title: "Grow", desc: "Build confidence, develop proof of work, and grow into someone opportunities find." }
             ].map((item, i) => (
               <motion.div 
                 key={i}
@@ -477,8 +486,8 @@ export default function Home() {
           
           <div className="space-y-6">
             {[
-              { quote: "The most actionable community for DevRels right now. I landed my current consulting gig through a connection I made here.", author: "Sarah J.", role: "Senior Developer Advocate" },
-              { quote: "It’s not just theory. The playbooks shared in the Pro tier allowed us to scale our user retention by 25% in one quarter.", author: "David O.", role: "Growth Lead" }
+              { quote: "Through NextGen, I moved from just learning about community management to actually managing one and seeing results.", author: "Sarah J.", role: "Community Manager, Pasta De Cafe" },
+              { quote: "Being a part of this community has helped me stop overthinking and started executing. That shift alone has been the biggest value for me.", author: "David O.", role: "Community and Program Manager" }
             ].map((testimonial, i) => (
               <motion.div 
                 key={i}

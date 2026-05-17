@@ -94,9 +94,14 @@ export default function Workshops() {
                     </div>
                   </div>
 
-                  <button className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2">
+                  <a 
+                    href="https://luma.com/276f3w6s"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2"
+                  >
                     RSVP for Workshop <ArrowRight className="w-5 h-5" />
-                  </button>
+                  </a>
                 </div>
 
                 <div className="border-t border-brand-border pt-8">

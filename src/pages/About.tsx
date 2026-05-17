@@ -18,7 +18,7 @@ export default function About() {
           <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-6">
             The World's Future in Community-Led Growth
           </h2>
-          <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed mb-10">
+          <p className="text-lg text-zinc-400 max-w-3xl mx-auto leading-relaxed mb-10">
             NextGen Growth Lab is the premier global hub for community-led growth professionals who want to learn, connect, and build the future of growth - worldwide.
           </p>
         </motion.div>
@@ -40,7 +40,7 @@ export default function About() {
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-overlay"></div>
             <Target className="w-12 h-12 text-brand mb-6 group-hover:scale-110 transition-transform duration-500" />
             <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">Our Mission</h3>
-            <p className="text-zinc-400 leading-relaxed group-hover:text-zinc-300 transition-colors">
+            <p className="text-lg text-zinc-400 leading-relaxed group-hover:text-zinc-300 transition-colors">
               To equip community-led growth professionals worldwide with the skills, connections, and resources they need to build thriving communities that drive real business growth and social impact.
             </p>
           </motion.div>
@@ -55,7 +55,7 @@ export default function About() {
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-overlay"></div>
             <Globe2 className="w-12 h-12 text-brand mb-6 group-hover:scale-110 transition-transform duration-500" />
             <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">Our Vision</h3>
-            <p className="text-zinc-400 leading-relaxed group-hover:text-zinc-300 transition-colors">
+            <p className="text-lg text-zinc-400 leading-relaxed group-hover:text-zinc-300 transition-colors">
               To be the world's leading platform for community-led growth professionals, pioneering a global movement where communities power the next generation of businesses worldwide.
             </p>
           </motion.div>
@@ -72,7 +72,7 @@ export default function About() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">What We Stand For</h2>
-            <p className="text-zinc-400 max-w-2xl mx-auto">The core principles that guide our ecosystem.</p>
+            <p className="text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">The core principles that guide our ecosystem.</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -96,7 +96,7 @@ export default function About() {
                   <value.icon className="w-6 h-6 text-brand" />
                 </div>
                 <h4 className="text-xl font-bold text-white mb-3 group-hover:text-brand transition-colors">{value.title}</h4>
-                <p className="text-sm text-zinc-400 leading-relaxed group-hover:text-zinc-300 transition-colors">{value.desc}</p>
+                <p className="text-zinc-400 leading-relaxed group-hover:text-zinc-300 transition-colors">{value.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -149,7 +149,7 @@ function JourneyTimeline() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">Our Journey</h2>
-          <p className="text-zinc-400 max-w-2xl mx-auto text-lg">The road we've traveled to build the ultimate growth ecosystem.</p>
+          <p className="text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">The road we've traveled to build the ultimate growth ecosystem.</p>
         </motion.div>
       </div>
       
@@ -194,7 +194,7 @@ function JourneyTimeline() {
                     {item.year}
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-3">{item.title}</h3>
-                  <p className="text-zinc-300 leading-relaxed">{item.text}</p>
+                  <p className="text-zinc-400 leading-relaxed">{item.text}</p>
                 </div>
               </motion.div>
             </div>
@@ -228,35 +228,47 @@ function StorySection() {
         className="absolute bottom-10 left-0 w-[400px] h-[400px] bg-brand/5 blur-[120px] rounded-full pointer-events-none" 
       />
       
-      {/* Content */}
-      <motion.div 
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8 }}
-        className="max-w-4xl mx-auto relative z-10"
-      >
-        <div className="bg-[#1a1a1a]/80 backdrop-blur-md border border-brand-border rounded-3xl p-8 md:p-14 relative overflow-hidden group hover:border-brand/40 transition-all duration-500 shadow-2xl">
-          {/* Internal slight moving gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000 ease-out" />
-          
-          <h3 className="text-3xl md:text-4xl font-display font-bold text-white mb-8 relative z-10 flex items-center gap-4">
-            <span className="w-10 h-1 bg-brand rounded-full" />
-            How NextGen Came to Be
-          </h3>
-          <div className="space-y-6 text-zinc-300 text-lg md:text-xl leading-relaxed relative z-10 font-light">
-            <p className="first-line:uppercase first-line:tracking-widest first-letter:text-5xl first-letter:font-bold first-letter:text-brand first-letter:mr-2 first-letter:float-left">
-              It started with a simple observation: the landscape of business growth was shifting. Traditional marketing channels were becoming saturated, expensive, and less effective. But everywhere we looked, companies that invested in genuine, engaged communities were thriving.
-            </p>
-            <p>
-              However, there was a glaring gap. While the demand for community builders and community-led growth strategists skyrocketed, there was no centralized ecosystem where these professionals could get practical training, find vetted opportunities, and learn from each other's direct experiences.
-            </p>
-            <p>
-              NextGen Growth Lab was born out of this necessity. We set out to create more than just a course or a slack group. We wanted to build a comprehensive ecosystem - a lab where the next generation of growth leaders could experiment, develop strategies that actually work, and connect directly with the companies that need them most.
-            </p>
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-center relative z-10">
+        <motion.div 
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="lg:col-span-5"
+        >
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand/30 bg-brand/10 text-[10px] font-bold tracking-widest text-brand uppercase mb-6">
+            The Origin
           </div>
-        </div>
-      </motion.div>
+          <h2 className="text-4xl md:text-5xl lg:text-5xl font-display font-bold text-white mb-6 leading-tight">
+            How <span className="text-brand">NextGen</span> Came to Be
+          </h2>
+          <div className="w-20 h-1 bg-brand rounded-full mb-8"></div>
+        </motion.div>
+
+        <motion.div 
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="lg:col-span-7"
+        >
+          <div className="bg-brand-surface border border-brand-border rounded-3xl p-8 md:p-12 relative overflow-hidden group hover:border-brand/40 transition-colors shadow-lg hover:shadow-brand/5">
+            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-overlay"></div>
+            
+            <div className="relative z-10 space-y-6 text-lg text-zinc-400 leading-relaxed">
+              <p>
+                It started with a simple observation: the landscape of business growth was shifting. Traditional marketing channels were becoming saturated, expensive, and less effective. But everywhere we looked, companies that invested in genuine, engaged communities were thriving.
+              </p>
+              <p>
+                However, there was a glaring gap. While the demand for community builders and community-led growth strategists skyrocketed, there was no centralized ecosystem where these professionals could get practical training, find vetted opportunities, and learn from each other's direct experiences.
+              </p>
+              <p>
+                NextGen Growth Lab was born out of this necessity. We set out to create more than just a course or a group. We wanted to build a comprehensive ecosystem - a lab where the next generation of growth leaders could experiment, develop strategies that actually work, and connect directly with the companies that need them most.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </div>
     </Section>
   );
 }

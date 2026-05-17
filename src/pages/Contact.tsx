@@ -33,7 +33,7 @@ export default function Contact() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-brand/5 blur-[50px] rounded-full pointer-events-none transition-transform group-hover:scale-150 duration-700" />
               <Mail className="w-8 h-8 text-brand mb-6" />
               <h3 className="text-xl font-bold text-white mb-2 relative z-10">Email Us</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed mb-6 relative z-10">We're here to help and answer any questions you might have.</p>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-6 relative z-10">We're here to help and answer any questions you might have. We typically respond within 24 hours.</p>
               <a href="mailto:nextgengrowthlab@gmail.com" className="text-brand hover:underline font-semibold relative z-10">nextgengrowthlab@gmail.com</a>
             </div>
 
@@ -129,6 +129,9 @@ export default function Contact() {
               >
                 Send Message
               </button>
+              <p className="text-center text-xs text-zinc-500 mt-4">
+                We typically respond to all inquiries within 24 hours.
+              </p>
             </form>
           </motion.div>
         </div>

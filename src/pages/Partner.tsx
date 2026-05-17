@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 import { Section } from "../components/Section";
 import { ArrowRight, Megaphone, Users, LineChart, CheckCircle2 } from "lucide-react";
 
@@ -16,9 +17,9 @@ export default function Partner() {
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
             Reach the world's most engaged community of growth professionals. Let's create value together.
           </p>
-          <button className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2">
+          <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2">
             Get in Touch <ArrowRight className="w-5 h-5" />
-          </button>
+          </Link>
         </motion.div>
       </Section>
 

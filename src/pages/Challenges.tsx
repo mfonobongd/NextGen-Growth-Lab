@@ -112,8 +112,8 @@ export default function Challenges() {
                   className="flex items-center gap-3 mb-4"
                 >
                   <span className="flex items-center gap-2 text-xs font-bold px-3 py-1.5 bg-brand text-black rounded-full uppercase tracking-wider shadow-[0_0_15px_rgba(187,225,46,0.3)]">
-                    <span className="w-2 h-2 rounded-full bg-black animate-pulse" />
-                    Active Now
+                    <span className="w-2 h-2 rounded-full bg-green-700 animate-pulse" />
+                    Upcoming
                   </span>
                   <span className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 bg-brand-surface-2 border border-brand-border text-zinc-300 rounded-full uppercase tracking-wider">
                     <Clock className="w-3.5 h-3.5" />
@@ -127,30 +127,30 @@ export default function Challenges() {
 
                 <div className="mt-8 mb-8 border-t border-brand-border pt-6">
                   <div className="text-xs font-bold text-white mb-2 flex items-center gap-2 uppercase tracking-wider">
-                    <Clock className="w-4 h-4 text-brand" /> Challenge Ends In:
+                    <Clock className="w-4 h-4 text-brand" /> Challenge Starts In:
                   </div>
-                  <CountdownTimer targetDate="2026-05-16T23:59:59Z" />
+                  <CountdownTimer targetDate="2026-06-15T00:00:00Z" />
                 </div>
               </div>
 
               <div className="flex flex-wrap items-center gap-6">
-                <div className="flex items-center gap-2">
-                  <div className="w-10 h-10 rounded-full bg-brand/10 border border-brand/20 flex items-center justify-center text-brand">
-                    <Users className="w-5 h-5" />
+                  <div className="flex items-center gap-2">
+                    <div className="w-10 h-10 rounded-full bg-brand/10 border border-brand/20 flex items-center justify-center text-brand">
+                      <Users className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <div className="text-xl font-bold text-white"><AnimatedCounter value={10} /></div>
+                      <div className="text-xs text-zinc-500 font-medium uppercase tracking-wider">Participants</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-xl font-bold text-white"><AnimatedCounter value={234} /></div>
-                    <div className="text-xs text-zinc-500 font-medium uppercase tracking-wider">Participants</div>
-                  </div>
-                </div>
-                <a 
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2"
-                >
-                  Join Challenge Now <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
-                </a>
+                  <a 
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc3iMtw1sls8lij52IDqI8hW-3-ZXzTEJtR6bzIzNQOkp31PQ/viewform?usp=publish-editor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2"
+                  >
+                    Join Challenge Now <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
+                  </a>
               </div>
             </div>
 
@@ -187,7 +187,7 @@ export default function Challenges() {
                     </motion.div>
                   ))}
                   <a 
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc3iMtw1sls8lij52IDqI8hW-3-ZXzTEJtR6bzIzNQOkp31PQ/viewform?usp=publish-editor"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-4 text-sm font-semibold text-zinc-400 hover:text-brand transition-colors flex items-center justify-center gap-1 group/more"
@@ -227,11 +227,11 @@ export default function Challenges() {
             </div>
             <div className="divide-y divide-brand-border">
               {[
-                { rank: 1, name: "Sarah Williams", role: "Community Manager", points: 1500, color: "text-yellow-400" },
-                { rank: 2, name: "David Chen", role: "DevRel Engineer", points: 1200, color: "text-zinc-300" },
-                { rank: 3, name: "Aisha Mohammed", role: "Growth Marketer", points: 1150, color: "text-orange-400" },
-                { rank: 4, name: "James Anderson", role: "Community Builder", points: 900, color: "text-zinc-500" },
-                { rank: 5, name: "Elena Rodriguez", role: "Developer Advocate", points: 850, color: "text-zinc-500" }
+                { rank: 1, name: "Your name here", role: "Community Manager", points: 0, color: "text-yellow-400" },
+                { rank: 2, name: "Your name here", role: "DevRel Engineer", points: 0, color: "text-zinc-300" },
+                { rank: 3, name: "Your name here", role: "Growth Marketer", points: 0, color: "text-orange-400" },
+                { rank: 4, name: "Your name here", role: "Community Builder", points: 0, color: "text-zinc-500" },
+                { rank: 5, name: "Your name here", role: "Developer Advocate", points: 0, color: "text-zinc-500" }
               ].map((user, idx) => (
                 <motion.div 
                   key={user.rank} 

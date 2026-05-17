@@ -12,7 +12,7 @@ export default function Mentorship() {
       <Section className="pb-16 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand/30 bg-brand/10 text-[10px] font-bold tracking-widest text-brand uppercase mb-6">
-            Cohort 1.0 open to all Community Managers
+            Applications for cohort 1.0 closed on Friday 15th May 2026
           </div>
           <h1 className="text-5xl md:text-6xl font-display font-bold mb-6 tracking-tight text-white">
             Mentorship Program
@@ -112,86 +112,16 @@ export default function Mentorship() {
       <Section className="py-16">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">Apply Now</h2>
-            <p className="text-zinc-400">Choose how you'd like to participate in the mentorship program.</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">Applications Closed</h2>
+            <p className="text-zinc-400">Applications for cohort 1.0 closed on Friday 15th May 2026. Keep an eye out for our next cohort!</p>
           </div>
 
-          {/* Tabs Control */}
-          <div className="flex justify-center mb-8">
-            <div className="inline-flex bg-[#1a1a1a] p-1.5 rounded-xl border border-brand-border relative">
-              <button
-                onClick={() => setActiveTab("mentee")}
-                className={`relative px-8 py-3 text-sm font-bold tracking-wide transition-all z-10 rounded-lg ${
-                  activeTab === "mentee" ? "text-black" : "text-zinc-500 hover:text-white"
-                }`}
-              >
-                Apply as Mentee
-              </button>
-              <button
-                onClick={() => setActiveTab("mentor")}
-                className={`relative px-8 py-3 text-sm font-bold tracking-wide transition-all z-10 rounded-lg ${
-                  activeTab === "mentor" ? "text-black" : "text-zinc-500 hover:text-white"
-                }`}
-              >
-                Apply as Mentor
-              </button>
-              
-              {/* Tab Highlight Background */}
-              <div 
-                className={`absolute inset-y-1.5 w-[calc(50%-6px)] bg-brand rounded-lg transition-transform duration-300 ease-out z-0 ${
-                  activeTab === "mentee" ? "translate-x-0" : "translate-x-[calc(100%+6px)]"
-                }`}
-              />
-            </div>
-          </div>
-
-          {/* Form Containers */}
-          <div className="bg-brand-surface border border-brand-border rounded-3xl overflow-hidden min-h-[600px] md:min-h-[800px] relative">
-            <AnimatePresence mode="wait">
-              {activeTab === "mentee" ? (
-                <motion.div
-                  key="mentee-form"
-                  initial={{ opacity: 0, scale: 0.98 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.98 }}
-                  transition={{ duration: 0.3 }}
-                  className="absolute inset-0 w-full h-full bg-white/5"
-                >
-                  <iframe 
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSdvHtsCFIKlTuGJ1zt9dLEbNce4qCzX2FRK-Ud2K6mUnsZODg/viewform?embedded=true" 
-                    width="100%" 
-                    height="100%" 
-                    frameBorder="0" 
-                    marginHeight={0} 
-                    marginWidth={0}
-                    title="Mentee Application Form"
-                  >
-                    Loading…
-                  </iframe>
-                </motion.div>
-              ) : (
-                <motion.div
-                  key="mentor-form"
-                  initial={{ opacity: 0, scale: 0.98 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.98 }}
-                  transition={{ duration: 0.3 }}
-                  className="absolute inset-0 w-full h-full bg-white/5"
-                >
-                  <iframe 
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSfjIakR4BOf8LDb6Q4VZEGGhiFqu5fAvjxciSB5tQOdl7Nt3w/viewform?embedded=true" 
-                    width="100%" 
-                    height="100%" 
-                    frameBorder="0" 
-                    marginHeight={0} 
-                    marginWidth={0}
-                    title="Mentor Application Form"
-                  >
-                    Loading…
-                  </iframe>
-                </motion.div>
-              )}
-            </AnimatePresence>
+          <div className="bg-brand-surface border border-brand-border rounded-3xl p-12 text-center">
+             <div className="w-16 h-16 rounded-full bg-brand/10 border border-brand/20 flex flex-col items-center justify-center text-brand mx-auto mb-6">
+                <CalendarCheck className="w-8 h-8" />
+             </div>
+             <h3 className="text-xl font-bold text-white mb-2">Thank you to everyone who applied!</h3>
+             <p className="text-zinc-400">We are currently reviewing applications. Selected mentees and mentors will be notified soon.</p>
           </div>
         </div>
       </Section>

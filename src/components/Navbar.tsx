@@ -6,6 +6,10 @@ import { cn } from "../lib/utils";
 
 const NAV_LINKS = [
   { 
+    name: "About Us",
+    href: "/about"
+  },
+  { 
     name: "Community", 
     href: "/community",
     subLinks: [
@@ -35,7 +39,6 @@ const NAV_LINKS = [
     name: "Company",
     href: "/about",
     subLinks: [
-      { name: "About Us", href: "/about" },
       { name: "Products", href: "/products", comingSoon: true },
       { name: "Blog", href: "/blog", comingSoon: true },
       { name: "FAQ", href: "/faq" },
@@ -133,12 +136,6 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-4">
           <Link
-            to="/about"
-            className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-          >
-            About Us
-          </Link>
-          <Link
             to="/contact"
             className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
           >
@@ -211,13 +208,6 @@ export default function Navbar() {
                 </div>
               ))}
               <div className="h-px bg-brand-border w-full" />
-              <Link
-                to="/about"
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-lg font-medium text-gray-300 hover:text-white"
-              >
-                About Us
-              </Link>
               <Link
                 to="/contact"
                 onClick={() => setMobileMenuOpen(false)}

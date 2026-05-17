@@ -18,9 +18,9 @@ export default function AgencyServices() {
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
             Let our experienced community-led growth professionals embed with your team to build, manage, and scale your community, so you don't have to figure it out alone.
           </p>
-          <a href="https://cal.com/nextgen-growth-lab-waokgk/discoverycall?overlayCalendar=true" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2">
-            Book a Discovery Call <ArrowRight className="w-5 h-5" />
-          </a>
+          <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2">
+            Get Started <ArrowRight className="w-5 h-5" />
+          </Link>
         </motion.div>
       </Section>
 
@@ -205,14 +205,12 @@ export default function AgencyServices() {
       <Section className="py-16 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-display font-bold text-white mb-8">Ready to scale your community?</h2>
-          <a 
-            href="https://cal.com/nextgen-growth-lab-waokgk/discoverycall?overlayCalendar=true"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link 
+            to="/contact"
             className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-white rounded-full transition-all duration-300 hover:bg-gray-100 hover:scale-105 active:scale-95 gap-2"
           >
             Get Started <ArrowRight className="w-5 h-5" />
-          </a>
+          </Link>
         </div>
       </Section>
 

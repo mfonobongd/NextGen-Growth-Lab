@@ -10,7 +10,7 @@ export default function BuildFest() {
       <Section className="pb-16 text-center mt-8 md:mt-12">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand/30 bg-brand/10 text-[10px] font-bold tracking-widest text-brand uppercase mb-6">
-            Oct 2026 • Lagos, Nigeria
+            NOV 2026 • Lagos, Nigeria
           </div>
           <h1 className="text-5xl md:text-6xl font-display font-bold mb-6 tracking-tight text-white">
             BuildFest
@@ -205,191 +205,86 @@ export default function BuildFest() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto bg-brand-surface border border-brand-border rounded-3xl p-8 md:p-12 relative overflow-hidden group hover:border-brand/40 transition-colors shadow-lg hover:shadow-brand/5"
+          className="max-w-5xl mx-auto bg-brand-surface border border-brand-border rounded-3xl p-8 md:p-12 relative overflow-hidden group hover:border-brand/40 transition-colors shadow-lg hover:shadow-brand/5"
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-brand/5 blur-[100px] rounded-full pointer-events-none group-hover:bg-brand/10 transition-colors duration-500" />
           
-          <div className="grid md:grid-cols-2 gap-12 relative z-10">
-            <div>
-              <h2 className="text-3xl font-display font-bold text-white mb-8">Event Details</h2>
-              <div className="space-y-6">
-                 <motion.div 
-                   initial={{ opacity: 0, x: -10 }}
-                   whileInView={{ opacity: 1, x: 0 }}
-                   viewport={{ once: true }}
-                   transition={{ delay: 0.1 }}
-                   className="flex items-start gap-4 group/item hover:-translate-y-0.5 transition-transform"
-                 >
-                  <div className="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center text-brand shrink-0 group-hover/item:bg-brand group-hover/item:text-black transition-colors duration-300">
-                    <MapPin className="w-6 h-6" />
+          <div className="relative z-10 text-center">
+            <h2 className="text-3xl lg:text-4xl font-display font-bold text-white mb-10">Event Details</h2>
+            
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <motion.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                  className="flex flex-col items-center gap-4 group/item hover:-translate-y-1 transition-transform"
+                >
+                  <div className="w-16 h-16 rounded-2xl bg-brand/10 border border-brand/20 flex items-center justify-center text-brand shrink-0 group-hover/item:bg-brand group-hover/item:text-black transition-colors duration-300">
+                    <MapPin className="w-8 h-8" />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-zinc-500 uppercase tracking-wider mb-1">Location</div>
+                    <div className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2">Location</div>
                     <div className="text-lg font-semibold text-white group-hover/item:text-brand transition-colors">Lagos, Nigeria</div>
                   </div>
                 </motion.div>
-                 <motion.div 
-                   initial={{ opacity: 0, x: -10 }}
-                   whileInView={{ opacity: 1, x: 0 }}
-                   viewport={{ once: true }}
-                   transition={{ delay: 0.2 }}
-                   className="flex items-start gap-4 group/item hover:-translate-y-0.5 transition-transform"
-                 >
-                  <div className="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center text-brand shrink-0 group-hover/item:bg-brand group-hover/item:text-black transition-colors duration-300">
-                    <Calendar className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-zinc-500 uppercase tracking-wider mb-1">Date</div>
-                    <div className="text-lg font-semibold text-white group-hover/item:text-brand transition-colors">October 2026</div>
-                  </div>
-                </motion.div>
-                 <motion.div 
-                   initial={{ opacity: 0, x: -10 }}
-                   whileInView={{ opacity: 1, x: 0 }}
-                   viewport={{ once: true }}
-                   transition={{ delay: 0.3 }}
-                   className="flex items-start gap-4 group/item hover:-translate-y-0.5 transition-transform"
-                 >
-                  <div className="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center text-brand shrink-0 group-hover/item:bg-brand group-hover/item:text-black transition-colors duration-300">
-                    <Users className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-zinc-500 uppercase tracking-wider mb-1">Audience Size</div>
-                    <div className="text-lg font-semibold text-white group-hover/item:text-brand transition-colors">50–100 curated attendees</div>
-                  </div>
-                </motion.div>
-                 <motion.div 
-                   initial={{ opacity: 0, x: -10 }}
-                   whileInView={{ opacity: 1, x: 0 }}
-                   viewport={{ once: true }}
-                   transition={{ delay: 0.4 }}
-                   className="flex items-start gap-4 group/item hover:-translate-y-0.5 transition-transform"
-                 >
-                  <div className="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center text-brand shrink-0 group-hover/item:bg-brand group-hover/item:text-black transition-colors duration-300">
-                    <Target className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-zinc-500 uppercase tracking-wider mb-1">Format</div>
-                    <div className="text-lg font-semibold text-white group-hover/item:text-brand transition-colors">In-person, invite-only</div>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-
-            <div className="flex flex-col justify-center">
-              <h3 className="text-xl font-bold text-white mb-6">Why It Matters</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed mb-6">
-                BuildFest exists to bridge the gap in learning, collaboration, and honest conversations by creating access to shared knowledge, encouraging collaboration, and elevating the quality of work in the ecosystem.
-              </p>
-              <div className="grid grid-cols-2 gap-4">
+                
                 <motion.div 
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.1 }}
-                  className="bg-brand-bg rounded-xl p-4 border border-brand-border text-center hover:border-brand/50 transition-colors"
-                >
-                  <span className="block text-xs font-bold text-zinc-500 uppercase mb-1">Curated</span>
-                  <span className="text-sm font-semibold text-white">Not crowded</span>
-                </motion.div>
-                <motion.div 
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 }}
-                  className="bg-brand-bg rounded-xl p-4 border border-brand-border text-center hover:border-brand/50 transition-colors"
+                  className="flex flex-col items-center gap-4 group/item hover:-translate-y-1 transition-transform"
                 >
-                  <span className="block text-xs font-bold text-zinc-500 uppercase mb-1">Practical</span>
-                  <span className="text-sm font-semibold text-white">Not theoretical</span>
+                  <div className="w-16 h-16 rounded-2xl bg-brand/10 border border-brand/20 flex items-center justify-center text-brand shrink-0 group-hover/item:bg-brand group-hover/item:text-black transition-colors duration-300">
+                    <Calendar className="w-8 h-8" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2">Date</div>
+                    <div className="text-lg font-semibold text-white group-hover/item:text-brand transition-colors">NOV 2026</div>
+                  </div>
                 </motion.div>
+                
                 <motion.div 
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 }}
-                  className="bg-brand-bg rounded-xl p-4 border border-brand-border text-center hover:border-brand/50 transition-colors"
+                  className="flex flex-col items-center gap-4 group/item hover:-translate-y-1 transition-transform"
                 >
-                  <span className="block text-xs font-bold text-zinc-500 uppercase mb-1">Interactive</span>
-                  <span className="text-sm font-semibold text-white">Not passive</span>
+                  <div className="w-16 h-16 rounded-2xl bg-brand/10 border border-brand/20 flex items-center justify-center text-brand shrink-0 group-hover/item:bg-brand group-hover/item:text-black transition-colors duration-300">
+                    <Users className="w-8 h-8" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2">Audience</div>
+                    <div className="text-lg font-semibold text-white group-hover/item:text-brand transition-colors">50–100 pax</div>
+                  </div>
                 </motion.div>
+
                 <motion.div 
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.4 }}
-                  className="bg-brand-bg rounded-xl p-4 border border-brand-border text-center hover:border-brand/50 transition-colors"
+                  className="flex flex-col items-center gap-4 group/item hover:-translate-y-1 transition-transform"
                 >
-                  <span className="block text-xs font-bold text-zinc-500 uppercase mb-1">Community</span>
-                  <span className="text-sm font-semibold text-white">Not hype-driven</span>
+                  <div className="w-16 h-16 rounded-2xl bg-brand/10 border border-brand/20 flex items-center justify-center text-brand shrink-0 group-hover/item:bg-brand group-hover/item:text-black transition-colors duration-300">
+                    <Target className="w-8 h-8" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2">Format</div>
+                    <div className="text-lg font-semibold text-white group-hover/item:text-brand transition-colors">In-person</div>
+                  </div>
                 </motion.div>
-              </div>
             </div>
           </div>
         </motion.div>
       </Section>
 
-      {/* Event Schedule */}
-      <Section className="py-24 border-t border-brand-border cursor-default">
-        <div className="max-w-4xl mx-auto">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">Schedule of Events</h2>
-            <p className="text-zinc-400 max-w-2xl mx-auto">
-              A single-day, high-impact agenda designed for actionable learning and deep connection.
-            </p>
-          </motion.div>
-
-          <div className="space-y-4">
-            {[
-              { time: "9:00 AM - 10:00 AM", title: "Registration & Breakfast Networking", desc: "Settle in, grab a coffee, and connect with fellow community builders.", type: "break" },
-              { time: "10:00 AM - 10:15 AM", title: "Welcome & Opening Remarks", desc: "Setting the stage for the day's insights and goals.", type: "session" },
-              { time: "10:15 AM - 11:00 AM", title: "Keynote: The Future of Community-Led Growth in Africa", desc: "Exploring the shifting landscape and what it means for your career.", type: "keynote" },
-              { time: "11:00 AM - 11:45 AM", title: "Panel: Building Culturally Relevant Developer Communities", desc: "Insights from leading DevRel professionals.", type: "panel" },
-              { time: "11:45 AM - 12:00 PM", title: "Coffee Break", desc: "Stretch, hydrate, and network.", type: "break" },
-              { time: "12:00 PM - 1:00 PM", title: "Masterclass: Metrics that Matter - Measuring Community ROI", desc: "A practical deep-dive into tracking success.", type: "workshop" },
-              { time: "1:00 PM - 2:00 PM", title: "Lunch & Interactive Workshops", desc: "Breakout sessions over a curated lunch.", type: "break" },
-              { time: "2:00 PM - 2:45 PM", title: "Panel: Growth Marketing Secrets for Ecosystem Builders", desc: "Bridging the gap between marketing and community.", type: "panel" },
-              { time: "2:45 PM - 3:00 PM", title: "Closing Notes & Networking", desc: "Wrapping up the day and carrying the conversation forward.", type: "session" }
-            ].map((session, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className={`flex flex-col md:flex-row gap-4 md:gap-8 p-6 rounded-2xl border transition-all ${
-                  session.type === 'break' 
-                    ? 'bg-[#1a1a1a] border-brand-border/50 opacity-80 hover:opacity-100' 
-                    : 'bg-brand-surface border-brand-border hover:border-brand/40 shadow-lg hover:shadow-brand/5 group'
-                }`}
-              >
-                <div className="md:w-48 shrink-0">
-                  <div className={`text-sm font-bold font-mono ${session.type === 'break' ? 'text-zinc-500' : 'text-brand'}`}>
-                    {session.time}
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className={`text-xl font-bold mb-2 ${session.type === 'break' ? 'text-zinc-300' : 'text-white group-hover:text-brand transition-colors'}`}>
-                    {session.title}
-                  </h3>
-                  <p className="text-zinc-400 text-sm leading-relaxed">
-                    {session.desc}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </Section>
-
       {/* Sponsors */}
       <Section className="py-16 border-t border-brand-border">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-display font-bold text-white mb-6">Partner with BuildFest</h2>
+          <h2 className="text-3xl font-display font-bold text-white mb-6">Sponsor or Partner with BuildFest</h2>
           <p className="text-zinc-400 max-w-2xl mx-auto leading-relaxed mb-10">
             Showcase your brand to a highly engaged audience of community managers, growth marketers, and ecosystem builders across Africa.
           </p>
