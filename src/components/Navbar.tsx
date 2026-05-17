@@ -43,12 +43,17 @@ const NAV_LINKS = [
       { name: "Blog", href: "/blog", comingSoon: true },
       { name: "FAQ", href: "/faq" },
     ]
+  },
+  {
+    name: "Contact",
+    href: "/contact"
   }
 ];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [expandedMenu, setExpandedMenu] = useState<string | null>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -62,6 +67,7 @@ export default function Navbar() {
   // Close mobile menu on route change
   useEffect(() => {
     setMobileMenuOpen(false);
+    setExpandedMenu(null);
   }, [location.pathname]);
 
   return (
@@ -136,12 +142,6 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-4">
           <Link
-            to="/contact"
-            className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-          >
-            Contact
-          </Link>
-          <Link
             to="/community/hub"
             className="group relative inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold tracking-wider text-black transition-all duration-300 bg-brand rounded-full hover:shadow-[0_0_20px_rgba(187,225,46,0.3)] hover:scale-105"
           >
@@ -169,52 +169,66 @@ export default function Navbar() {
             transition={{ duration: 0.2 }}
             className="absolute top-full inset-x-0 bg-brand-surface border-b border-brand-border md:hidden"
           >
-            <div className="flex flex-col px-6 py-8 space-y-6">
+            <div className="flex flex-col px-6 py-8 space-y-4">
               {NAV_LINKS.map((link) => (
-                <div key={link.name} className="flex flex-col space-y-2">
+                <div key={link.name} className="flex flex-col">
                   {link.subLinks ? (
-                    <div className="text-lg font-medium text-gray-300">
+                    <button
+                      onClick={() => setExpandedMenu(expandedMenu === link.name ? null : link.name)}
+                      className="flex items-center justify-between py-2 text-lg font-medium text-gray-300 hover:text-white w-full text-left focus:outline-none"
+                    >
                       {link.name}
-                    </div>
+                      <ChevronDown
+                        className={cn(
+                          "w-5 h-5 transition-transform duration-200",
+                          expandedMenu === link.name ? "rotate-180" : ""
+                        )}
+                      />
+                    </button>
                   ) : (
                     <Link
                       to={link.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="text-lg font-medium text-gray-300 hover:text-white"
+                      className="py-2 text-lg font-medium text-gray-300 hover:text-white"
                     >
                       {link.name}
                     </Link>
                   )}
                   {link.subLinks && (
-                    <div className="flex flex-col pl-4 space-y-3 mt-2 border-l border-brand-border/50">
-                      {link.subLinks.map(sub => (
-                         <Link
-                          key={sub.name}
-                          to={sub.href}
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-white"
-                         >
-                           {sub.name}
-                           {/* @ts-ignore */}
-                           {sub.comingSoon && (
-                             <span className="text-[10px] font-bold px-2 py-0.5 bg-brand/10 text-brand rounded-full uppercase tracking-wider">
-                               Coming Soon
-                             </span>
-                           )}
-                         </Link>
-                      ))}
-                    </div>
+                    <AnimatePresence>
+                      {expandedMenu === link.name && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.2 }}
+                          className="overflow-hidden"
+                        >
+                          <div className="flex flex-col pl-4 space-y-3 py-2 border-l border-brand-border/50">
+                            {link.subLinks.map(sub => (
+                               <Link
+                                key={sub.name}
+                                to={sub.href}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-white"
+                               >
+                                 {sub.name}
+                                 {/* @ts-ignore */}
+                                 {sub.comingSoon && (
+                                   <span className="text-[10px] font-bold px-2 py-0.5 bg-brand/10 text-brand rounded-full uppercase tracking-wider">
+                                     Coming Soon
+                                   </span>
+                                 )}
+                               </Link>
+                            ))}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   )}
                 </div>
               ))}
-              <div className="h-px bg-brand-border w-full" />
-              <Link
-                to="/contact"
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-lg font-medium text-gray-300 hover:text-white"
-              >
-                Contact Us
-              </Link>
+              <div className="h-px bg-brand-border w-full my-2" />
               <Link
                 to="/community/hub"
                 onClick={() => setMobileMenuOpen(false)}

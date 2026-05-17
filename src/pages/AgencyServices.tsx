@@ -2,10 +2,16 @@ import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Section } from "../components/Section";
 import { ArrowRight, CheckCircle2, LayoutTemplate, Zap, Search, Calendar, Users, RefreshCw, Briefcase } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 export default function AgencyServices() {
   return (
     <div className="pt-24 md:pt-32 pb-16 md:pb-24">
+      <SEO 
+        title="Agency Services | NextGen Growth Lab"
+        description="Hire our in-house team of community-led growth professionals to build, manage, and scale your community strategy and operations."
+        canonicalUrl="/business/agency"
+      />
       {/* Hero Section */}
       <Section className="pb-16 text-center mt-8 md:mt-12">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-4xl mx-auto">

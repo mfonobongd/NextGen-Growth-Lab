@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { ArrowRight, Users, Zap, Briefcase, ChevronRight, CheckCircle2, Globe, Target } from "lucide-react";
 import { Section } from "../components/Section";
 import { FAQList } from "./FAQ";
+import { SEO } from "../components/SEO";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -21,8 +22,27 @@ const staggerContainer = {
 export default function Home() {
   const [isUSD, setIsUSD] = useState(false);
 
+  const orgSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NextGen Growth Lab",
+    "url": "https://nextgengrowthlab.com",
+    "logo": "https://nextgengrowthlab.com/logo.png",
+    "description": "A premium ecosystem where top Marketers, DevRels, and Founders connect, learn, and scale world-class programs.",
+    "sameAs": [
+      "https://twitter.com/nextgengrowthlab",
+      "https://linkedin.com/company/nextgengrowthlab"
+    ]
+  };
+
   return (
     <div className="pt-24">
+      <SEO 
+        title="NextGen Growth Lab | Building the Next Generation of Leaders"
+        description="A premium ecosystem where top Marketers, DevRels, and Founders connect, learn, and scale world-class programs. Join NextGen Growth Lab today."
+        canonicalUrl="/"
+        schema={orgSchema}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 lg:py-40">
         {/* Background Ambient Glow */}

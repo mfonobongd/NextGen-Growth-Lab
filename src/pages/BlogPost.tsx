@@ -48,6 +48,21 @@ export default function BlogPost() {
     );
   }
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "image": [
+      post.imageUrl
+    ],
+    "datePublished": new Date(post.date).toISOString(),
+    "author": [{
+        "@type": "Person",
+        "name": post.author,
+        "url": "https://nextgengrowthlab.com"
+      }]
+  };
+
   return (
     <article className="pt-24 md:pt-32 pb-16 md:pb-24">
       <Helmet>
@@ -62,6 +77,9 @@ export default function BlogPost() {
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.excerpt} />
         <meta name="twitter:image" content={post.imageUrl} />
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchema)}
+        </script>
       </Helmet>
       
       <Section className="pb-16 mt-8 md:mt-12">

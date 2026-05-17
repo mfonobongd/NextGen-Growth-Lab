@@ -4,6 +4,7 @@ import { Users, FileText, Video, Target, Users2, Briefcase, Check, ChevronDown }
 import { useState } from "react";
 import { cn } from "../lib/utils";
 import { AnimatedCounter } from "../components/AnimatedCounter";
+import { SEO } from "../components/SEO";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -16,6 +17,11 @@ export default function CommunityHub() {
 
   return (
     <div className="pt-24 border-t border-brand-border pb-16">
+      <SEO 
+        title="Community Hub | NextGen Growth Lab"
+        description="Join the NextGen Community Hub. A premium ecosystem for community managers, marketers, and founders to connect, learn, and grow."
+        canonicalUrl="/community/hub"
+      />
       {/* Hero Section */}
       <Section className="pb-16 lg:pb-24 text-center mt-12 md:mt-16">
         <motion.div initial="hidden" animate="visible" variants={fadeUp} className="max-w-3xl mx-auto">

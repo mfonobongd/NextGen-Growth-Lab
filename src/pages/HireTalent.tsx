@@ -2,10 +2,16 @@ import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Section } from "../components/Section";
 import { ArrowRight, CheckCircle2, ShieldCheck, Globe2, HeartHandshake, Zap } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 export default function HireTalent() {
   return (
     <div className="pt-32 pb-24">
+      <SEO 
+        title="Hire Talent | NextGen Growth Lab"
+        description="Access a curated pool of trained, mentored, and community-verified professionals ready to drive your community-led growth."
+        canonicalUrl="/business/hire"
+      />
       <Section className="pb-16 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand/30 bg-brand/10 text-[10px] font-bold tracking-widest text-brand uppercase mb-6">

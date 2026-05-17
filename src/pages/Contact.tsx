@@ -3,10 +3,16 @@ import { motion } from "motion/react";
 import { Section } from "../components/Section";
 import { MessageSquare, Mail, MapPin, Calendar, Globe2 } from "lucide-react";
 import { FAQList } from "./FAQ";
+import { SEO } from "../components/SEO";
 
 export default function Contact() {
   return (
     <div className="pt-24 md:pt-32 pb-16 md:pb-24">
+      <SEO 
+        title="Contact Us | NextGen Growth Lab"
+        description="Get in touch with NextGen Growth Lab to hire talent, partner on events, or join our community-led growth ecosystem."
+        canonicalUrl="/contact"
+      />
       <Section className="pb-16 text-center mt-8 md:mt-12">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand/30 bg-brand/10 text-[10px] font-bold tracking-widest text-brand uppercase mb-6">

@@ -1,6 +1,8 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 import { Section } from "../components/Section";
 import { Search } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 export const BLOG_POSTS = [
   {
@@ -44,6 +46,11 @@ export const BLOG_POSTS = [
 export default function Blog() {
   return (
     <div className="pt-24 md:pt-32 pb-16 md:pb-24 flex items-center justify-center min-h-[70vh]">
+      <SEO 
+        title="Blog & Insights | NextGen Growth Lab"
+        description="Read our latest thoughts, strategies, and resources on community building, growth marketing, and DevRel."
+        canonicalUrl="/blog"
+      />
       <Section className="pb-8 text-center mt-8 md:mt-12">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand/30 bg-brand/10 text-[10px] font-bold tracking-widest text-brand uppercase mb-6">
