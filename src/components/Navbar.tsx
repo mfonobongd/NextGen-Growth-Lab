@@ -18,7 +18,7 @@ const NAV_LINKS = [
     ]
   },
   { 
-    name: "Events", 
+    name: "Our Programs", 
     href: "/events",
     subLinks: [
       { name: "Workshops", href: "/events/workshops" },

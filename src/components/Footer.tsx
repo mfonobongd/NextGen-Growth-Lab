@@ -66,12 +66,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="hover:text-white transition-colors flex items-center gap-2">
+                <a href="https://medium.com/@nextgengrowthlab" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2">
                   Blog
-                  <span className="text-[10px] font-bold px-2 py-0.5 bg-brand/10 text-brand rounded-full uppercase tracking-wider">
-                    Coming Soon
-                  </span>
-                </Link>
+                </a>
               </li>
               <li><Link to="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
               <li><Link to="/challenges" className="hover:text-white transition-colors">Challenges</Link></li>
