@@ -117,7 +117,7 @@ export default function Challenges() {
                   </span>
                   <span className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 bg-brand-surface-2 border border-brand-border text-zinc-300 rounded-full uppercase tracking-wider">
                     <Clock className="w-3.5 h-3.5" />
-                    15 Days
+                    27th July - 14th August 2026
                   </span>
                 </motion.div>
                 <h2 className="text-3xl lg:text-4xl font-display font-bold mb-4 text-white">#15DaysOfCommunityManagement</h2>
@@ -127,9 +127,9 @@ export default function Challenges() {
 
                 <div className="mt-8 mb-8 border-t border-brand-border pt-6">
                   <div className="text-xs font-bold text-white mb-2 flex items-center gap-2 uppercase tracking-wider">
-                    <Clock className="w-4 h-4 text-brand" /> Challenge Starts In:
+                    <Clock className="w-4 h-4 text-brand" /> Registration Deadline:
                   </div>
-                  <CountdownTimer targetDate="2026-06-15T00:00:00Z" />
+                  <CountdownTimer targetDate="2026-07-24T23:59:59Z" />
                 </div>
               </div>
 
@@ -144,9 +144,11 @@ export default function Challenges() {
                     </div>
                   </div>
                   <a 
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSc3iMtw1sls8lij52IDqI8hW-3-ZXzTEJtR6bzIzNQOkp31PQ/viewform?usp=publish-editor"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="#register-form"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById('register-form')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
                     className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2"
                   >
                     Join Challenge Now <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -187,9 +189,11 @@ export default function Challenges() {
                     </motion.div>
                   ))}
                   <a 
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSc3iMtw1sls8lij52IDqI8hW-3-ZXzTEJtR6bzIzNQOkp31PQ/viewform?usp=publish-editor"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="#register-form"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById('register-form')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
                     className="w-full py-4 text-sm font-semibold text-zinc-400 hover:text-brand transition-colors flex items-center justify-center gap-1 group/more"
                   >
                     View all 15 tasks <ChevronRight className="w-4 h-4 group-hover/more:translate-x-1 transition-transform" />
@@ -198,6 +202,27 @@ export default function Challenges() {
               </div>
             </div>
           </div>
+        </motion.div>
+
+        {/* Registration Form Embed */}
+        <motion.div 
+          id="register-form"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-4xl mx-auto mb-16 bg-white rounded-3xl overflow-hidden shadow-2xl border border-brand-border/30"
+        >
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSetkowGeLv_Ry19KRkRAR8rHJZsn8m9D2z3rnstCNHWtqFg9A/viewform?embedded=true" 
+            width="100%" 
+            height="900" 
+            frameBorder="0" 
+            marginHeight={0} 
+            marginWidth={0}
+            className="w-full bg-white"
+          >
+            Loading…
+          </iframe>
         </motion.div>
 
         {/* Leaderboard */}

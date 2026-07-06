@@ -39,8 +39,8 @@ const NAV_LINKS = [
     name: "Company",
     href: "/about",
     subLinks: [
+      { name: "Team & Volunteers", href: "/team" },
       { name: "Products", href: "/products", comingSoon: true },
-      { name: "Blog", href: "/blog", comingSoon: true },
       { name: "FAQ", href: "/faq" },
     ]
   },

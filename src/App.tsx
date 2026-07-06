@@ -21,9 +21,7 @@ import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import About from "./pages/About";
 import Products from "./pages/Products";
-
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
+import Team from "./pages/Team";
 
 export function ScrollToTop() {
   const { pathname } = useLocation();
@@ -69,9 +67,8 @@ function MainRoutes() {
         <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
         <Route path="/faq" element={<PageWrapper><FAQ /></PageWrapper>} />
         <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
+        <Route path="/team" element={<PageWrapper><Team /></PageWrapper>} />
         <Route path="/products" element={<PageWrapper><Products /></PageWrapper>} />
-        <Route path="/blog" element={<PageWrapper><Blog /></PageWrapper>} />
-        <Route path="/blog/:slug" element={<PageWrapper><BlogPost /></PageWrapper>} />
       </Routes>
     </AnimatePresence>
   );

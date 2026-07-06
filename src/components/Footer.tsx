@@ -51,6 +51,7 @@ export default function Footer() {
               <li><Link to="/business/hire" className="hover:text-white transition-colors">Hire Talent</Link></li>
               <li><Link to="/business/partner" className="hover:text-white transition-colors">Partner with us</Link></li>
               <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="/team" className="hover:text-white transition-colors">Team & Volunteers</Link></li>
             </ul>
           </div>
 
@@ -64,11 +65,6 @@ export default function Footer() {
                     Coming Soon
                   </span>
                 </Link>
-              </li>
-              <li>
-                <a href="https://medium.com/@nextgengrowthlab" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2">
-                  Blog
-                </a>
               </li>
               <li><Link to="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
               <li><Link to="/challenges" className="hover:text-white transition-colors">Challenges</Link></li>
