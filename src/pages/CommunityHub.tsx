@@ -29,31 +29,18 @@ export default function CommunityHub() {
             The Community Hub
           </div>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-6 tracking-tight leading-tight">
-            Join the World's Leading <span className="text-brand">Community-Led Growth</span> Community
+            Join an Exclusive <span className="text-brand">Community-Led Growth</span> Network
           </h1>
           <p className="text-lg text-gray-400 mb-10 leading-relaxed max-w-2xl mx-auto">
-            A global space for community builders, growth marketers, and DevRel professionals to learn, connect, and accelerate their careers together.
+            An exclusive space for community builders, growth marketers, and DevRel professionals. Gain access through member recommendation or express entry.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform?usp=dialog"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#how-to-join"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2"
               >
-                Join for Free
-              </a>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <a 
-                href="https://paystack.shop/pay/nglcmembership"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-transparent border border-brand-border rounded-full transition-all duration-300 hover:border-brand/50 hover:bg-brand/5 hover:scale-105 active:scale-95 gap-2"
-              >
-                <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                <span className="relative z-10 w-full text-center">Explore Premium</span>
+                How to Join
               </a>
             </motion.div>
           </div>
@@ -124,11 +111,11 @@ export default function CommunityHub() {
         </div>
       </Section>
 
-      {/* Pricing / Tiers */}
-      <Section className="py-16 md:py-24">
+      {/* How to Join */}
+      <Section className="py-16 md:py-24" id="how-to-join">
         <div className="text-center mb-10 md:mb-16">
-          <h2 className="text-3xl lg:text-4xl font-display font-bold mb-4">Choose Your Membership</h2>
-          <p className="text-gray-400">Start free, or go Premium for the full experience. Cancel anytime.</p>
+          <h2 className="text-3xl lg:text-4xl font-display font-bold mb-4">How to Join</h2>
+          <p className="text-gray-400">This is an exclusive community. You can join via member recommendation or by paying for express access.</p>
         </div>
 
         {/* Currency Converter (Sticky/Fixed) */}
@@ -146,7 +133,7 @@ export default function CommunityHub() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {/* General Tier */}
+          {/* Member Invite Tier */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -156,18 +143,17 @@ export default function CommunityHub() {
           >
             <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             <div className="relative z-10">
-              <h3 className="text-2xl font-bold font-display mb-2">General</h3>
-              <p className="text-zinc-400 text-sm mb-6">Get started with essential community-led growth access</p>
+              <h3 className="text-2xl font-bold font-display mb-2">Member Invite</h3>
+              <p className="text-zinc-400 text-sm mb-6">Get recommended and invited by an existing community member.</p>
               <div className="mb-8">
-                <span className="text-4xl font-bold">{isUSD ? "$0" : "₦0"}</span>
-                <span className="text-zinc-500 font-medium"> / forever</span>
+                <span className="text-4xl font-bold">Free</span>
+                <span className="text-zinc-500 font-medium"> / with invite</span>
               </div>
             </div>
             <ul className="space-y-4 mb-8 flex-1 relative z-10">
               {[
-                'Access to community discussions',
+                'Full access to community discussions',
                 'Monthly newsletter',
-                'Basic learning resources',
                 'Community events access',
                 'Networking opportunities'
               ].map((feature, i) => (
@@ -184,12 +170,12 @@ export default function CommunityHub() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-transparent border border-brand-border rounded-full transition-all duration-300 hover:border-brand/50 hover:bg-brand/5 hover:scale-105 active:scale-95 gap-2 w-full"
                 >
-                  Join Free
+                  Request Invite
                 </a>
               </motion.div>
           </motion.div>
 
-          {/* Premium Tier */}
+          {/* Express Access Tier */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -201,19 +187,19 @@ export default function CommunityHub() {
             <div className="absolute inset-0 bg-brand/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0" />
             <div className="absolute top-0 right-0 -mt-8 -mr-8 w-48 h-48 bg-brand/20 blur-3xl rounded-full z-0 pointer-events-none" />
             <div className="absolute top-0 right-0 mt-6 md:mt-10 mr-6 md:mr-10">
-              <span className="text-[10px] font-bold px-3 py-1 bg-brand text-black rounded-full uppercase tracking-widest shadow-lg shadow-brand/20">Most Popular</span>
+              <span className="text-[10px] font-bold px-3 py-1 bg-brand text-black rounded-full uppercase tracking-widest shadow-lg shadow-brand/20">Fast Track</span>
             </div>
             
-            <h3 className="text-2xl font-bold font-display mb-2 text-white">Premium</h3>
-            <p className="text-zinc-400 text-sm mb-6 max-w-[240px] md:max-w-xs">Unlock the full community-led growth experience</p>
+            <h3 className="text-2xl font-bold font-display mb-2 text-white">Express Access</h3>
+            <p className="text-zinc-400 text-sm mb-6 max-w-[240px] md:max-w-xs">Skip the line and gain immediate access to the community.</p>
             <div className="mb-8">
-              <span className="text-4xl font-bold text-white">{isUSD ? "$45" : "₦59,999"}</span>
+              <span className="text-4xl font-bold text-white">{isUSD ? "$100" : "₦150,000"}</span>
               <span className="text-brand font-medium"> / year</span>
             </div>
             <ul className="space-y-4 mb-8 flex-1">
               <li className="flex gap-3 text-sm font-semibold text-white">
                 <Check className="w-5 h-5 text-brand shrink-0" />
-                Everything in General, plus:
+                Immediate full access, plus:
               </li>
               {[
                 'Exclusive workshops & masterclasses',
@@ -237,10 +223,10 @@ export default function CommunityHub() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2 w-full"
               >
-                Get Premium
+                Get Express Access
               </a>
             </motion.div>
-            <p className="text-xs text-center text-zinc-500 font-medium relative z-10">Premium membership renewed yearly. Cancel anytime.</p>
+            <p className="text-xs text-center text-zinc-500 font-medium relative z-10">Membership renewed yearly. Cancel anytime.</p>
           </motion.div>
         </div>
       </Section>
@@ -317,15 +303,13 @@ export default function CommunityHub() {
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-3/4 bg-brand/10 blur-[100px] pointer-events-none rounded-full" />
           <h2 className="relative text-3xl md:text-5xl font-display font-bold mb-6 text-white tracking-tight">Ready to Join?</h2>
           <p className="relative text-lg text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Start free, upgrade when you're ready. Join 500+ professionals shaping the world's future in community-led growth.
+            Gain express access today or get recommended. Join professionals shaping the world's future in community-led growth.
           </p>
           <a 
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeDSDPY7nf7nvGwqNAN9hehOBA1-vQndZPZ4r_-wBXwolF4tg/viewform?usp=dialog"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#how-to-join"
             className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2"
           >
-            Join the Community for Free
+            See Membership Options
           </a>
         </div>
       </Section>

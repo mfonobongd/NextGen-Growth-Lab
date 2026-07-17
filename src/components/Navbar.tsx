@@ -39,7 +39,6 @@ const NAV_LINKS = [
     name: "Company",
     href: "/about",
     subLinks: [
-      { name: "Team & Volunteers", href: "/team" },
       { name: "Products", href: "/products", comingSoon: true },
       { name: "FAQ", href: "/faq" },
     ]

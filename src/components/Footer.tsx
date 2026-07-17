@@ -51,7 +51,6 @@ export default function Footer() {
               <li><Link to="/business/hire" className="hover:text-white transition-colors">Hire Talent</Link></li>
               <li><Link to="/business/partner" className="hover:text-white transition-colors">Partner with us</Link></li>
               <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
-              <li><Link to="/team" className="hover:text-white transition-colors">Team & Volunteers</Link></li>
             </ul>
           </div>
 
