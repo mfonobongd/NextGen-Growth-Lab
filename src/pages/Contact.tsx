@@ -10,7 +10,7 @@ export default function Contact() {
     <div className="pt-24 md:pt-32 pb-16 md:pb-24">
       <SEO 
         title="Contact Us | NextGen Growth Lab"
-        description="Get in touch with NextGen Growth Lab to hire talent, partner on events, or join our community-led growth ecosystem."
+        description="Get in touch with NextGen Growth Lab to hire talent, partner on events, or join our next-generation builder ecosystem."
         canonicalUrl="/contact"
       />
       <Section className="pb-16 text-center mt-8 md:mt-12">
@@ -175,7 +175,7 @@ export default function Contact() {
           </motion.div>
           <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6 tracking-tight relative z-10">We're Building Across The Globe</h2>
           <p className="text-xl text-zinc-400 leading-relaxed mb-12 max-w-2xl mx-auto relative z-10">
-            With members in over 20 countries, NextGen Growth Lab is the world's leading network of community-led growth professionals.
+            With members in over 20 countries, NextGen Growth Lab is the world's leading network of tech innovators and builders.
           </p>
 
           <div className="flex flex-wrap justify-center gap-3 md:gap-4 max-w-3xl mx-auto relative z-10">

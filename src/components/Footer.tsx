@@ -72,17 +72,17 @@ export default function Footer() {
 
           <div>
             <h4 className="font-semibold mb-6">Newsletter</h4>
-            <p className="text-sm text-gray-400 mb-4">
-              Subscribe to our newsletter for the latest insights on community building and growth.
-            </p>
-            <a 
-              href="https://nextgengrowthlab.substack.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2 w-fit"
-            >
-              Subscribe on Substack <ArrowRight className="w-4 h-4" />
-            </a>
+            <div className="rounded-xl overflow-hidden border border-brand-border bg-white flex w-full">
+              <iframe 
+                src="https://nextgengrowthlab.substack.com/embed" 
+                width="100%" 
+                height="320" 
+                style={{ border: "1px solid #EEE", background: "white" }} 
+                frameBorder="0" 
+                scrolling="no"
+                title="NextGen Growth Lab Newsletter Subscription"
+              ></iframe>
+            </div>
           </div>
         </div>
 

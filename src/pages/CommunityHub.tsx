@@ -19,7 +19,7 @@ export default function CommunityHub() {
     <div className="pt-24 border-t border-brand-border pb-16">
       <SEO 
         title="Community Hub | NextGen Growth Lab"
-        description="Join the NextGen Community Hub. A premium ecosystem for community managers, marketers, and founders to connect, learn, and grow."
+        description="Join the NextGen Community Hub. A premium ecosystem for next-generation builders, tech innovators, and founders to connect, learn, and grow."
         canonicalUrl="/community/hub"
       />
       {/* Hero Section */}
@@ -29,10 +29,10 @@ export default function CommunityHub() {
             The Community Hub
           </div>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-6 tracking-tight leading-tight">
-            Join an Exclusive <span className="text-brand">Community-Led Growth</span> Network
+            Join an Exclusive <span className="text-brand">Next-Gen Builders</span> Network
           </h1>
           <p className="text-lg text-gray-400 mb-10 leading-relaxed max-w-2xl mx-auto">
-            An exclusive space for community builders, growth marketers, and DevRel professionals. Gain access through member recommendation or express entry.
+            The premier global hub for tech innovators, no-code/low-code creators, and AI enthusiasts who want to learn, connect, and scale worldwide.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -76,17 +76,17 @@ export default function CommunityHub() {
       <Section className="bg-brand-surface border-y border-brand-border py-16 md:py-24">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">What You'll Get as a Member</h2>
-          <p className="text-gray-400">Everything you need to build, grow, and monetize communities - all in one place.</p>
+          <p className="text-gray-400">Everything you need to create products, launch ideas, and grow your tech career - all in one place.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { icon: <Users />, title: "Peer Network", desc: "Connect with 500+ community-led growth professionals across the globe." },
-            { icon: <FileText />, title: "Exclusive Resources", desc: "Access frameworks, templates, playbooks, and case studies you won't find anywhere else." },
-            { icon: <Video />, title: "Expert Q&A Sessions", desc: "Monthly live sessions with industry leaders where you can ask anything." },
-            { icon: <Target />, title: "Challenges & Competitions", desc: "Join time-bound challenges to sharpen your skills and win prizes." },
-            { icon: <Users2 />, title: "Accountability Groups", desc: "Get matched with peers who keep you on track and push you to grow." },
-            { icon: <Briefcase />, title: "Job & Gig Board", desc: "Early access to community management, DevRel, and growth roles worldwide." }
+            { icon: <Users />, title: "Peer Network", desc: "Connect with 500+ next-generation builders across the globe." },
+            { icon: <FileText />, title: "Exclusive Resources", desc: "Access frameworks, templates, workflows, and tools you won't find anywhere else." },
+            { icon: <Video />, title: "Expert Q&A Sessions", desc: "Monthly live sessions with tech innovators where you can ask anything." },
+            { icon: <Target />, title: "Challenges & Competitions", desc: "Join time-bound build challenges to sharpen your skills and win prizes." },
+            { icon: <Users2 />, title: "Accountability Groups", desc: "Get matched with peers who keep you on track and push you to launch." },
+            { icon: <Briefcase />, title: "Job & Gig Board", desc: "Early access to tech, product, and AI roles worldwide." }
           ].map((feature, i) => (
             <motion.div 
               key={i}
@@ -144,7 +144,7 @@ export default function CommunityHub() {
             <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             <div className="relative z-10">
               <h3 className="text-2xl font-bold font-display mb-2">Member Invite</h3>
-              <p className="text-zinc-400 text-sm mb-6">Get recommended and invited by an existing community member.</p>
+              <p className="text-zinc-400 text-sm mb-6">Get recommended and invited by an existing community builder.</p>
               <div className="mb-8">
                 <span className="text-4xl font-bold">Free</span>
                 <span className="text-zinc-500 font-medium"> / with invite</span>
@@ -272,11 +272,11 @@ export default function CommunityHub() {
           <h2 className="text-3xl font-display font-bold mb-10 text-center">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {[
-              { q: "Who is this community for?", a: "Community managers, growth marketers, DevRel professionals, and founders looking to scale using community-led growth strategies." },
+              { q: "Who is this community for?", a: "No-code builders, AI enthusiasts, tech innovators, and founders looking to scale using new technologies." },
               { q: "What is the difference between General and Premium?", a: "General gives you basic access to discussions and events. Premium unlocks workshops, 1-on-1 mentorship, job boards, and advanced resources." },
               { q: "Can I upgrade or cancel later?", a: "Yes, you can upgrade to Premium anytime or cancel your subscription without any hassle directly from your account settings." },
               { q: "Are live sessions and events recorded?", a: "Yes, all our live expert Q&A sessions and workshops are recorded and made available inside the Premium resource library." },
-              { q: "Do I need prior experience to join?", a: "Not necessarily! Whether you are a beginner looking to break into DevRel or a seasoned community manager, there is immense value and a place for you here." }
+              { q: "Do I need prior coding experience to join?", a: "Not necessarily! Whether you are a beginner exploring no-code tools or a seasoned developer, there is immense value and a place for you here." }
             ].map((faq, i) => (
               <div key={i} className="border border-brand-border bg-brand-surface rounded-xl overflow-hidden text-left">
                 <button 
@@ -303,7 +303,7 @@ export default function CommunityHub() {
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-3/4 bg-brand/10 blur-[100px] pointer-events-none rounded-full" />
           <h2 className="relative text-3xl md:text-5xl font-display font-bold mb-6 text-white tracking-tight">Ready to Join?</h2>
           <p className="relative text-lg text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Gain express access today or get recommended. Join professionals shaping the world's future in community-led growth.
+            Gain express access today or get recommended. Join professionals shaping the future of digital products.
           </p>
           <a 
             href="#how-to-join"

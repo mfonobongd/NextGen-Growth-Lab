@@ -9,7 +9,7 @@ export default function HireTalent() {
     <div className="pt-32 pb-24">
       <SEO 
         title="Hire Talent | NextGen Growth Lab"
-        description="Access a curated pool of trained, mentored, and community-verified professionals ready to drive your community-led growth."
+        description="Access a curated pool of trained, mentored, and community-verified tech innovators ready to drive your product and startup growth."
         canonicalUrl="/business/hire"
       />
       <Section className="pb-16 text-center">
@@ -21,7 +21,7 @@ export default function HireTalent() {
             Hire From Our Community
           </h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
-            Access a curated pool of trained, mentored, and community-verified professionals ready to drive your community-led growth.
+            Access a curated pool of trained, mentored, and community-verified builders ready to drive your tech product growth.
           </p>
           <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2">
             Get Started <ArrowRight className="w-5 h-5" />
@@ -68,7 +68,7 @@ export default function HireTalent() {
               <Zap className="w-10 h-10 text-brand mb-6" />
               <h3 className="text-xl font-bold text-white mb-3">Growth Mindset</h3>
               <p className="text-zinc-400 leading-relaxed text-sm">
-                Our members are lifelong learners who stay current with community-led growth best practices.
+                Our members are lifelong learners who stay current with modern tech stack best practices.
               </p>
             </div>
           </div>
@@ -83,19 +83,19 @@ export default function HireTalent() {
             
             <div className="text-center relative z-10 mb-10">
               <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">Roles You Can Hire For</h2>
-              <p className="text-zinc-400">Our members specialise across the full community-led growth stack.</p>
+              <p className="text-zinc-400">Our members specialise across the full modern tech stack.</p>
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 relative z-10 max-w-2xl mx-auto">
               {[
-                "Community Managers",
+                "No-Code Builders",
                 "Developer Relations Engineers",
-                "Content Strategists",
+                "Product Managers",
                 "Growth Marketers",
-                "Community Operations Leads",
-                "Event Coordinators",
-                "Social Media Managers",
-                "Partnership Managers"
+                "AI Tool Specialists",
+                "Technical Writers",
+                "Full-Stack Developers",
+                "Startup Operators"
               ].map((role, idx) => (
                 <div key={idx} className="flex items-center gap-3 bg-brand-surface border border-brand-border rounded-xl p-4">
                   <div className="w-8 h-8 rounded-lg bg-brand/10 flex items-center justify-center shrink-0">

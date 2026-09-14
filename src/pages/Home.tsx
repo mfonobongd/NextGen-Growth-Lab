@@ -28,7 +28,7 @@ export default function Home() {
     "name": "NextGen Growth Lab",
     "url": "https://nextgengrowthlab.com",
     "logo": "https://nextgengrowthlab.com/logo.png",
-    "description": "A premium ecosystem where top Marketers, DevRels, and Founders connect, learn, and scale world-class programs.",
+    "description": "A community and ecosystem for next-generation builders exploring no-code, low-code, AI, technology, and new ways of building.",
     "sameAs": [
       "https://twitter.com/nextgengrowthlab",
       "https://linkedin.com/company/nextgengrowthlab"
@@ -38,8 +38,8 @@ export default function Home() {
   return (
     <div className="pt-24">
       <SEO 
-        title="NextGen Growth Lab | Building the Next Generation of Leaders"
-        description="A premium ecosystem where top Marketers, DevRels, and Founders connect, learn, and scale world-class programs. Join NextGen Growth Lab today."
+        title="NextGen Growth Lab | The Ecosystem for Next-Gen Builders"
+        description="We are a community and ecosystem for next-generation builders exploring no-code, low-code, AI, technology, and new ways of building."
         canonicalUrl="/"
         schema={orgSchema}
       />
@@ -85,7 +85,7 @@ export default function Home() {
                     animate={{ opacity: [0.8, 1, 0.8] }}
                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                   >
-                    A premium ecosystem where top Marketers, DevRels, and Founders connect, learn, and scale world-class programs.
+                    A community and ecosystem for next-generation builders exploring no-code, low-code, AI, technology, and new ways of building.
                   </motion.span>
                 </p>
                 
@@ -138,13 +138,13 @@ export default function Home() {
             </h2>
             <div className="space-y-6 text-lg text-zinc-400 leading-relaxed">
               <p>
-                Across the world, thousands of talented community builders, DevRel professionals, and growth marketers are doing an incredible work, but in isolation. No structured support. No shared playbooks. No clear career paths.
+                Across the world, thousands of talented creators and innovators are doing incredible work exploring new technologies, but often in isolation. No structured support. No shared playbooks. No clear pathways.
               </p>
               <p>
-                NextGen Growth Lab was born from a simple belief: <strong className="text-white font-medium">community-led growth professionals everywhere deserve world-class resources, real mentorship, and a network that grows with them.</strong>
+                NextGen Growth Lab was born from a simple belief: <strong className="text-white font-medium">next-generation builders everywhere deserve world-class resources, real mentorship, and a network that grows with them.</strong>
               </p>
               <p>
-                We built the home that didn't exist - a global space where practitioners across the world learn together, land dream roles, launch projects, tools, and define the future of community-led growth worldwide.
+                We built the home that didn't exist - a global space where you can create products, experiment with new tools, launch ideas, build your career, and connect with people who are building the future alongside you.
               </p>
             </div>
             <motion.div 
@@ -185,16 +185,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto text-center mb-12 md:mb-16 relative z-10">
           <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">Built to close the gap</h2>
           <p className="text-xl text-zinc-400 max-w-3xl mx-auto leading-relaxed">
-            Community-led growth professionals everywhere deserve world-class resources, supportive networks, and meaningful career opportunities.
+            Next-generation builders everywhere deserve world-class resources, supportive networks, and meaningful career opportunities in the tech ecosystem.
           </p>
         </div>
 
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 relative z-10">
           {[
-            { icon: <Target className="w-6 h-6" />, desc: "Structured support for community-led growth professionals worldwide" },
-            { icon: <Briefcase className="w-6 h-6" />, desc: "Quality resources, mentorship, and career opportunities in one place" },
-            { icon: <Globe className="w-6 h-6" />, desc: "Connecting global community-led growth talent with world-class opportunities" },
-            { icon: <Users className="w-6 h-6" />, desc: "Continuous learning and peer support for community-led growth careers" }
+            { icon: <Target className="w-6 h-6" />, desc: "Structured support for builders exploring no-code, low-code, and AI" },
+            { icon: <Briefcase className="w-6 h-6" />, desc: "Quality resources to create products, experiment, and launch ideas" },
+            { icon: <Globe className="w-6 h-6" />, desc: "Connecting global talent with world-class tech opportunities" },
+            { icon: <Users className="w-6 h-6" />, desc: "Continuous learning and peer support for your tech career" }
           ].map((item, i) => (
               <motion.div 
               key={i} 
@@ -230,7 +230,7 @@ export default function Home() {
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/20 blur-[100px] rounded-full pointer-events-none" />
           <h3 className="text-6xl md:text-8xl font-display font-bold text-black tracking-tight mb-4">10x</h3>
           <p className="text-2xl md:text-3xl text-black/80 font-medium max-w-xl mx-auto leading-tight">
-            Faster career growth with the <br className="hidden md:block" /> right community-led network
+            Faster career growth with the <br className="hidden md:block" /> right builder network
           </p>
         </motion.div>
       </Section>
@@ -246,7 +246,7 @@ export default function Home() {
             Choose your growth path
           </h2>
           <p className="text-lg text-zinc-400 max-w-2xl mx-auto mb-8">
-            Join the world's leading community-led growth network and accelerate your career.
+            Join the world's leading network for next-generation builders and accelerate your tech career.
           </p>
           
           <div className="flex items-center justify-center gap-3">
@@ -275,7 +275,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             <div className="mb-8 border-b border-brand-border pb-8 relative z-10">
               <h3 className="text-2xl font-bold font-display mb-2 text-white">General</h3>
-              <p className="text-zinc-400 text-sm mb-6">Get started with essential community-led growth access</p>
+              <p className="text-zinc-400 text-sm mb-6">Get started with essential builder ecosystem access</p>
               <div className="flex items-baseline gap-2">
                 <span className="text-4xl font-bold text-white tracking-tight">{isUSD ? "$0" : "₦0"}</span>
                 <span className="text-sm font-semibold text-zinc-500 uppercase tracking-widest">forever</span>
@@ -324,7 +324,7 @@ export default function Home() {
             </div>
             <div className="mb-8 border-b border-brand/20 pb-8">
               <h3 className="text-2xl font-bold font-display mb-2 text-white">Premium</h3>
-              <p className="text-zinc-400 text-sm mb-6">Unlock the full community-led growth experience</p>
+              <p className="text-zinc-400 text-sm mb-6">Unlock the full next-gen builder experience</p>
               <div className="flex items-baseline gap-2">
                 <span className="text-4xl font-bold text-white tracking-tight">{isUSD ? "$45" : "₦59,999"}</span>
                 <span className="text-sm font-semibold text-brand uppercase tracking-widest">/year</span>
@@ -379,14 +379,14 @@ export default function Home() {
             </h2>
             <div className="space-y-4 text-zinc-400 text-base leading-relaxed">
               <p>
-                BuildFest is a curated, in-person experience designed for people building the future of community, growth, and ecosystems in Africa.
+                BuildFest is a curated, in-person experience designed for people building the future of technology, AI, and new digital products.
               </p>
               <p>
-                We bring together community managers, marketers, DevRel professionals, founders, and operators for something different from the usual conference - a space focused on real conversations, practical insights, and meaningful connections.
+                We bring together founders, no-code/low-code builders, developers, and tech innovators for something different from the usual conference - a space focused on real conversations, practical insights, and meaningful connections.
               </p>
               <p>
                 This is not about sitting through panels.<br/>
-                It’s about learning what actually works, sharing experiences, and leaving with ideas you can apply immediately.
+                It’s about learning what actually works, launching ideas, and leaving with strategies you can apply immediately.
               </p>
             </div>
             <ul className="space-y-4">
@@ -423,15 +423,15 @@ export default function Home() {
       {/* Who It's For */}
       <Section>
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl lg:text-4xl font-display font-bold mb-4">Built for Growth Operators</h2>
-          <p className="text-gray-400">Whether you're just starting or scaling a global movement.</p>
+          <h2 className="text-3xl lg:text-4xl font-display font-bold mb-4">Built for Next-Gen Creators</h2>
+          <p className="text-gray-400">Whether you're just starting or scaling your next big product.</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { tag: "Community Managers", desc: "Build highly-engaged, structured networks that drive business value." },
-            { tag: "Growth Marketers", desc: "Master retention loops, acquisition channels, and organic scaling." },
-            { tag: "DevRel Professionals", desc: "Foster developer ecosystems that lead to product adoption." },
-            { tag: "Founders & Builders", desc: "Leverage community as a moat to scale your startup sustainably." }
+            { tag: "No-Code/Low-Code Builders", desc: "Create robust applications rapidly without writing complex code." },
+            { tag: "AI Enthusiasts", desc: "Experiment with cutting-edge AI tools and integrate them into your workflow." },
+            { tag: "Product Launchers", desc: "Take your ideas from concept to market with actionable strategies." },
+            { tag: "Tech Founders", desc: "Leverage modern tech stacks and networks to scale your startup sustainably." }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -506,8 +506,8 @@ export default function Home() {
           
           <div className="space-y-6">
             {[
-              { quote: "Through NextGen, I moved from just learning about community management to actually managing one and seeing results.", author: "Sarah J.", role: "Community Manager, Pasta De Cafe" },
-              { quote: "Being a part of this community has helped me stop overthinking and started executing. That shift alone has been the biggest value for me.", author: "David O.", role: "Community and Program Manager" }
+              { quote: "Through NextGen, I moved from just learning about no-code building to actually launching products and seeing results.", author: "Sarah J.", role: "Product Builder, Tech Startup" },
+              { quote: "Being a part of this community has helped me stop overthinking and started executing. That shift alone has been the biggest value for me.", author: "David O.", role: "Product Manager" }
             ].map((testimonial, i) => (
               <motion.div 
                 key={i}
@@ -566,7 +566,7 @@ export default function Home() {
           
           <h2 className="relative text-3xl md:text-5xl font-bold font-display mb-6 tracking-tight text-white">Ready to start your growth journey?</h2>
           <p className="relative text-lg text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Join a global community of community-led growth professionals and practitioners shaping the future. Your next opportunity awaits.
+            Join a global community of next-generation builders and innovators shaping the future. Your next opportunity awaits.
           </p>
           <div className="relative flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

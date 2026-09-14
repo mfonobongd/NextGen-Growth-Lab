@@ -9,7 +9,7 @@ export default function About() {
     <div className="pt-24 md:pt-32 pb-16 md:pb-24">
       <SEO 
         title="About Us | NextGen Growth Lab"
-        description="Learn about the origin and mission of NextGen Growth Lab, building the world's future in community-led growth."
+        description="Learn about the origin and mission of NextGen Growth Lab, building the world's future in digital product development."
         canonicalUrl="/about"
       />
       {/* Hero Section */}
@@ -22,10 +22,10 @@ export default function About() {
             Our Story
           </h1>
           <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-6">
-            The World's Future in Community-Led Growth
+            The World's Future in Building
           </h2>
           <p className="text-lg text-zinc-400 leading-relaxed max-w-3xl mx-auto mb-10">
-            NextGen Growth Lab is the premier global hub for community-led growth professionals who want to learn, connect, and build the future of growth - worldwide.
+            NextGen Growth Lab is a community and ecosystem for next-generation builders exploring no-code, low-code, AI, technology, and new ways of building - worldwide.
           </p>
         </motion.div>
       </Section>
@@ -47,7 +47,7 @@ export default function About() {
             <Target className="w-12 h-12 text-brand mb-6 group-hover:scale-110 transition-transform duration-500" />
             <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">Our Mission</h3>
             <p className="text-lg text-zinc-400 leading-relaxed group-hover:text-zinc-300 transition-colors">
-              To equip community-led growth professionals worldwide with the skills, connections, and resources they need to build thriving communities that drive real business growth and social impact.
+              To equip next-generation builders worldwide with the skills, connections, and resources they need to create products, experiment with new tools, and launch ideas that drive real impact.
             </p>
           </motion.div>
           
@@ -62,7 +62,7 @@ export default function About() {
             <Globe2 className="w-12 h-12 text-brand mb-6 group-hover:scale-110 transition-transform duration-500" />
             <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">Our Vision</h3>
             <p className="text-lg text-zinc-400 leading-relaxed group-hover:text-zinc-300 transition-colors">
-              To be the world's leading platform for community-led growth professionals, pioneering a global movement where communities power the next generation of businesses worldwide.
+              To be the world's leading platform for tech innovators and builders, pioneering a global movement where no-code, AI, and new technologies power the next generation of businesses worldwide.
             </p>
           </motion.div>
         </div>
@@ -131,17 +131,17 @@ function JourneyTimeline() {
     { 
       year: "2024", 
       title: "The Beginning",
-      text: "Started as the CM Growth Lab exclusively for community managers to share insights and resources." 
+      text: "Started as a small growth lab exclusively for creators to share insights, tools, and resources." 
     },
     { 
       year: "2025", 
       title: "The Evolution",
-      text: "Evolved into NextGen Growth Lab to accommodate DevRel and other marketing professionals, broadening our scope." 
+      text: "Evolved into NextGen Growth Lab to accommodate no-code builders, AI enthusiasts, and tech professionals, broadening our scope." 
     },
     { 
       year: "2026", 
       title: "The Launchpad",
-      text: "We truly became active. We opened up our community to the world and launched the first community management mentorship program." 
+      text: "We truly became active. We opened up our community to the world and launched the first builder mentorship program." 
     }
   ];
 
@@ -263,13 +263,13 @@ function StorySection() {
             
             <div className="relative z-10 space-y-6">
               <p className="text-lg text-zinc-400 leading-relaxed">
-                It started with a simple observation: the landscape of business growth was shifting. Traditional marketing channels were becoming saturated, expensive, and less effective. But everywhere we looked, companies that invested in genuine, engaged communities were thriving.
+                It started with a simple observation: the landscape of business and product development was shifting rapidly. Traditional coding and long development cycles were being replaced by new, agile tools. But everywhere we looked, companies and creators who embraced AI, no-code, and low-code were thriving.
               </p>
               <p className="text-lg text-zinc-400 leading-relaxed">
-                However, there was a glaring gap. While the demand for community builders and community-led growth strategists skyrocketed, there was no centralized ecosystem where these professionals could get practical training, find vetted opportunities, and learn from each other's direct experiences.
+                However, there was a glaring gap. While the demand for versatile builders and tech innovators skyrocketed, there was no centralized ecosystem where these professionals could get practical training, experiment with new tools, and learn from each other's direct experiences.
               </p>
               <p className="text-lg text-zinc-400 leading-relaxed">
-                NextGen Growth Lab was born out of this necessity. We set out to create more than just a course or a group. We wanted to build a comprehensive ecosystem - a lab where the next generation of growth leaders could experiment, develop strategies that actually work, and connect directly with the companies that need them most.
+                NextGen Growth Lab was born out of this necessity. We set out to create more than just a course or a group. We wanted to build a comprehensive ecosystem - a lab where the next generation of builders could experiment, launch ideas that actually work, and connect directly with the peers who are building the future alongside them.
               </p>
             </div>
           </div>

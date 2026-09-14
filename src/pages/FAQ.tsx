@@ -13,8 +13,8 @@ type FAQItem = {
 const faqs: FAQItem[] = [
   {
     question: "What is NextGen Growth Lab?",
-    answer: "NextGen Growth Lab is an ecosystem focused on helping community managers, marketers, and growth professionals learn, practice, and grow through hands-on programs, events, and real-world experiences.",
-    answerText: "NextGen Growth Lab is an ecosystem focused on helping community managers, marketers, and growth professionals learn, practice, and grow through hands-on programs, events, and real-world experiences."
+    answer: "NextGen Growth Lab is an ecosystem focused on helping tech innovators, builders, and growth professionals learn, practice, and grow through hands-on programs, events, and real-world experiences.",
+    answerText: "NextGen Growth Lab is an ecosystem focused on helping tech innovators, builders, and growth professionals learn, practice, and grow through hands-on programs, events, and real-world experiences."
   },
   {
     question: "Who is NextGen for?",
@@ -22,14 +22,14 @@ const faqs: FAQItem[] = [
       <>
         <p className="mb-2">NextGen is for:</p>
         <ul className="list-disc pl-5 space-y-1">
-          <li>Aspiring and experienced Community Managers</li>
+          <li>Aspiring and experienced No-Code Builders</li>
           <li>Growth & Marketing Professionals</li>
-          <li>DevRel practitioners</li>
-          <li>Founders and operators building communities or products</li>
+          <li>AI Enthusiasts and Tech Innovators</li>
+          <li>Founders and operators building digital products</li>
         </ul>
       </>
     ),
-    answerText: "NextGen is for Aspiring and experienced Community Managers, Growth & Marketing Professionals, DevRel practitioners, and Founders and operators building communities or products."
+    answerText: "NextGen is for Aspiring and experienced No-Code Builders, Growth & Marketing Professionals, AI Enthusiasts and Tech Innovators, and Founders and operators building digital products."
   },
   {
     question: "What makes NextGen different?",
@@ -52,14 +52,14 @@ const faqs: FAQItem[] = [
       <>
         <p className="mb-2">We run:</p>
         <ul className="list-disc pl-5 space-y-1">
-          <li>Community Management Mentorship Programs</li>
+          <li>Builder Mentorship Programs</li>
           <li>Monthly learning sessions (The Growth Lab Series)</li>
           <li>Workshops and hands-on training</li>
           <li>Writing and visibility initiatives</li>
         </ul>
       </>
     ),
-    answerText: "We run Community Management Mentorship Programs, Monthly learning sessions (The Growth Lab Series), Workshops and hands-on training, and Writing and visibility initiatives."
+    answerText: "We run Builder Mentorship Programs, Monthly learning sessions (The Growth Lab Series), Workshops and hands-on training, and Writing and visibility initiatives."
   },
   {
     question: "Are your programs free or paid?",
@@ -296,7 +296,7 @@ export default function FAQ() {
     <div className="pt-24 md:pt-32 pb-16 md:pb-24">
       <SEO 
         title="FAQ | NextGen Growth Lab"
-        description="Frequently asked questions about NextGen Growth Lab, our community, programs, and how you can get involved in the future of community-led growth."
+        description="Frequently asked questions about NextGen Growth Lab, our community, programs, and how you can get involved in the future of digital building."
         canonicalUrl="/faq"
         schema={faqSchema}
       />

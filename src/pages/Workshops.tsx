@@ -9,7 +9,7 @@ export default function Workshops() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-display font-bold mb-6 tracking-tight">Upcoming Events</h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Conferences, meetups, and gatherings for community-led growth professionals worldwide.
+            Conferences, meetups, and gatherings for next-generation builders worldwide.
           </p>
         </motion.div>
       </Section>

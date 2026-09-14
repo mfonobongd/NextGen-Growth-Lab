@@ -19,7 +19,7 @@ export default function BuildFest() {
             NextGen Growth Lab’s flagship in-person gathering
           </p>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
-            Designed for community managers, marketers, growth professionals, DevRel practitioners, and ecosystem builders. We are not just learning; we are actively building, experimenting, and shaping communities and growth systems across Africa.
+            Designed for next-generation builders exploring no-code, low-code, AI, technology, and new ways of building. We are not just learning; we are actively creating products, experimenting with tools, and shaping digital ecosystems across Africa.
           </p>
           <button className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2">
             Request an Invite <ArrowRight className="w-5 h-5" />
@@ -42,7 +42,7 @@ export default function BuildFest() {
                 BuildFest is intentionally designed as a high-value, interactive experience where ideas are exchanged, real challenges are discussed, and practical solutions are shared.
               </p>
               <p>
-                Across Africa, more people are stepping into roles in community, growth, and ecosystem building, but there are still limited spaces for real learning, collaboration, and honest conversations.
+                Across Africa, more people are stepping into roles in tech, product development, and new ways of building, but there are still limited spaces for real learning, collaboration, and honest conversations.
               </p>
             </div>
           </motion.div>

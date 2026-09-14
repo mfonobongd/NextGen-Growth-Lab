@@ -41,7 +41,7 @@ export default function Partner() {
                 Event Sponsorship
               </h3>
               <p className="text-zinc-400 mb-8 leading-relaxed relative z-10 group-hover:text-zinc-300 transition-colors">
-                Put your brand in front of the world's top community-led growth professionals at our events, workshops, and masterclasses.
+                Put your brand in front of the world's top tech innovators and builders at our events, workshops, and masterclasses.
               </p>
               <ul className="space-y-3 relative z-10">
                 {[
@@ -117,7 +117,7 @@ export default function Partner() {
                 Research & Insights
               </h3>
               <p className="text-zinc-400 mb-8 leading-relaxed relative z-10 group-hover:text-zinc-300 transition-colors">
-                Commission custom research on community-led growth trends, or sponsor our annual industry report.
+                Commission custom research on tech and digital product building trends, or sponsor our annual industry report.
               </p>
               <ul className="space-y-3 relative z-10">
                 {[

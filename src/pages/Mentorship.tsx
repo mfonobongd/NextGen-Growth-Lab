@@ -18,7 +18,7 @@ export default function Mentorship() {
             Mentorship Program
           </h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed mb-12 flex justify-center">
-            Get paired with experienced community-led growth leaders for personalized guidance, career strategy, and growth acceleration over 4 intensive weeks.
+            Get paired with experienced tech leaders and builders for personalized guidance, career strategy, and growth acceleration over 4 intensive weeks.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-16">

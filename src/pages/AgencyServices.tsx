@@ -9,7 +9,7 @@ export default function AgencyServices() {
     <div className="pt-24 md:pt-32 pb-16 md:pb-24">
       <SEO 
         title="Agency Services | NextGen Growth Lab"
-        description="Hire our in-house team of community-led growth professionals to build, manage, and scale your community strategy and operations."
+        description="Hire our in-house team of tech professionals to build, manage, and scale your tech products and operations."
         canonicalUrl="/business/agency"
       />
       {/* Hero Section */}
@@ -22,7 +22,7 @@ export default function AgencyServices() {
             Hire Our In-House Team
           </h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
-            Let our experienced community-led growth professionals embed with your team to build, manage, and scale your community, so you don't have to figure it out alone.
+            Let our experienced builders and innovators embed with your team to build, manage, and scale your tech products, so you don't have to figure it out alone.
           </p>
           <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black bg-brand rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(187,225,46,0.4)] hover:scale-105 active:scale-95 gap-2">
             Get Started <ArrowRight className="w-5 h-5" />
@@ -40,16 +40,16 @@ export default function AgencyServices() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">What We Do</h2>
-            <p className="text-zinc-400 max-w-2xl mx-auto">Full-service community-led growth - from strategy to execution.</p>
+            <p className="text-zinc-400 max-w-2xl mx-auto">Full-service tech building - from strategy to execution.</p>
           </motion.div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: "Community Strategy & Build",
-                desc: "We design, launch, and manage branded communities from the ground up - with engagement playbooks tailored to your audience.",
+                title: "Product Strategy & Build",
+                desc: "We design, launch, and manage digital products from the ground up - using modern no-code/low-code tools tailored to your audience.",
                 icon: LayoutTemplate,
-                list: ["Community architecture", "Platform setup & migration", "Launch strategy", "Moderation playbook"]
+                list: ["Product architecture", "Tech stack setup", "Launch strategy", "Testing playbook"]
               },
               {
                 title: "Growth & Engagement Programs",
@@ -77,15 +77,15 @@ export default function AgencyServices() {
               },
               {
                 title: "Team Restructuring Support",
-                desc: "Transitioning your marketing team to a community-led model? We help redefine roles, workflows, and KPIs for the shift.",
+                desc: "Transitioning your team to a tech-led model? We help redefine roles, workflows, and KPIs for the shift.",
                 icon: RefreshCw,
                 list: ["Current state assessment", "New role & workflow design", "KPI realignment", "Change management guidance"]
               },
               {
                 title: "Executive Strategy Sessions",
-                desc: "Align leadership on the value and execution of community-led growth with focused sessions designed for C-suite and department heads.",
+                desc: "Align leadership on the value and execution of tech-led product growth with focused sessions designed for C-suite and department heads.",
                 icon: Briefcase,
-                list: ["CLG business case development", "ROI frameworks", "Cross-department alignment", "Strategic roadmap creation"],
+                list: ["Tech business case development", "ROI frameworks", "Cross-department alignment", "Strategic roadmap creation"],
                 className: "md:col-span-2 lg:col-span-3 lg:w-2/3 lg:mx-auto" // Center the last one if it's odd
               }
             ].map((service, idx) => (
